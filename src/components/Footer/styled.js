@@ -3,9 +3,10 @@ import styled from 'styled-components';
 export const FooterTag = styled.footer`
   background-color: #1c1818;
   color: white;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.7px);
+  -webkit-backdrop-filter: blur(4.7px);
 `;
 export const Container = styled.div`
   display: flex;

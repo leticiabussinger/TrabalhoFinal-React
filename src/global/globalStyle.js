@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import Fundo from '../assets/img/fundo2.png';
+import FundoLogin from '../assets/img/fundologin1.png';
 
 export const GlobalStyle = createGlobalStyle`
     *{
@@ -16,8 +17,15 @@ export const GlobalStyle = createGlobalStyle`
         background-size: cover;
         background-attachment: fixed;
     }
-`;
+    `;
 export const GlobalStyleLogin = createGlobalStyle`
+    body{
+        background-image: url(${FundoLogin});
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
     *{
         margin: 0;
         padding: 0;

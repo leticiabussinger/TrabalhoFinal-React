@@ -1,0 +1,327 @@
+{
+  "usuarios": [
+    {
+      "nome": "Rhayllon",
+      "email": "email@teste.com",
+      "senha": "false",
+      "id": 1
+    }
+  ],
+  "produtos": [
+    {
+      "nome": "Cadeira",
+      "preco": 2999.99,
+      "favoritos": [],
+      "categoria": "Sala",
+      "cor": "",
+      "quantidade": 10,
+      "descricao": "Uma cadeira muito confortavel",
+      "imgUrl": "/assets/img/Cadeira.png",
+      "id": 1
+    },
+    {
+      "nome": "Cadeira 2",
+      "preco": 29.99,
+      "quantidade": 15,
+      "descricao": "Uma cadeira com design moderno e estiloso.",
+      "imgUrl": "/assets/img/cadeira2.jpeg",
+      "id": 2
+    },
+    {
+      "nome": "Cadeira 3",
+      "preco": 29.99,
+      "quantidade": 20,
+      "descricao": "Uma cadeira resistente e confortável para o dia a dia.",
+      "imgUrl": "/assets/img/cadeira3.jpeg",
+      "id": 3
+    },
+    {
+      "nome": "Cadeira 4",
+      "preco": 29.99,
+      "quantidade": 12,
+      "descricao": "Uma cadeira ergonômica e ajustável para longas horas de trabalho.",
+      "imgUrl": "/assets/img/cadeira4.jpeg",
+      "id": 4
+    },
+    {
+      "nome": "Cadeira 5",
+      "preco": 29.99,
+      "quantidade": 18,
+      "descricao": "Uma cadeira acolchoada e confortável para ambientes descontraídos.",
+      "imgUrl": "/assets/img/cadeira5.jpeg",
+      "id": 5
+    },
+    {
+      "nome": "Cadeira 6",
+      "preco": 29.99,
+      "quantidade": 22,
+      "descricao": "Uma cadeira compacta e elegante para espaços reduzidos.",
+      "imgUrl": "/assets/img/cadeira6.jpeg",
+      "id": 6
+    },
+    {
+      "nome": "Cadeira 7",
+      "preco": 29.99,
+      "quantidade": 14,
+      "descricao": "Uma cadeira vibrante e cheia de personalidade para seu escritório.",
+      "imgUrl": "/assets/img/cadeira7.jpeg",
+      "id": 7
+    },
+    {
+      "nome": "Cadeira Gamer 1",
+      "preco": 29.99,
+      "quantidade": 25,
+      "descricao": "Uma cadeira gamer estilosa e confortável para longas sessões de jogos.",
+      "imgUrl": "/assets/img/cadeira_gamer1.jpeg",
+      "id": 8
+    },
+    {
+      "nome": "Cadeira Gamer 2",
+      "preco": 29.99,
+      "quantidade": 30,
+      "descricao": "Uma cadeira gamer ergonômica e reclinável para total imersão nos jogos.",
+      "imgUrl": "/assets/img/cadeira_gamer2.jpeg",
+      "id": 9
+    },
+    {
+      "nome": "Cadeira Gamer 3",
+      "preco": 29.99,
+      "quantidade": 28,
+      "descricao": "Uma cadeira gamer resistente e confortável para jogadores exigentes.",
+      "imgUrl": "/assets/img/cadeira_gamer3.jpeg",
+      "id": 10
+    },
+    {
+      "nome": "Comoda 1",
+      "preco": 99.99,
+      "quantidade": 8,
+      "descricao": "Uma cômoda espaçosa e elegante para organização de roupas e pertences.",
+      "imgUrl": "/assets/img/comoda1.jpeg",
+      "id": 11
+    },
+    {
+      "nome": "Comoda 2",
+      "preco": 99.99,
+      "quantidade": 10,
+      "descricao": "Uma cômoda clássica e funcional para quartos modernos.",
+      "imgUrl": "/assets/img/comoda2.jpeg",
+      "id": 12
+    },
+    {
+      "nome": "Comoda 3",
+      "preco": 99.99,
+      "quantidade": 6,
+      "descricao": "Uma cômoda versátil e compacta para espaços reduzidos.",
+      "imgUrl": "/assets/img/comoda3.jpeg",
+      "id": 13
+    },
+    {
+      "nome": "Estante 1",
+      "preco": 79.99,
+      "quantidade": 20,
+      "descricao": "Uma estante espaçosa e versátil para livros e decoração.",
+      "imgUrl": "/assets/img/estante1.jpeg",
+      "id": 14
+    },
+    {
+      "nome": "Estante 2",
+      "preco": 79.99,
+      "quantidade": 18,
+      "descricao": "Uma estante moderna e elegante para organizar seus objetos favoritos.",
+      "imgUrl": "/assets/img/estante2.jpeg",
+      "id": 15
+    },
+    {
+      "nome": "Estante 3",
+      "preco": 79.99,
+      "quantidade": 22,
+      "descricao": "Uma estante rústica e prática para ambientes aconchegantes.",
+      "imgUrl": "/assets/img/estante3.jpeg",
+      "id": 16
+    },
+    {
+      "nome": "Estante 4",
+      "preco": 79.99,
+      "quantidade": 25,
+      "descricao": "Uma estante multifuncional e elegante para espaços de convívio.",
+      "imgUrl": "/assets/img/estante4.jpeg",
+      "id": 17
+    },
+    {
+      "nome": "Estante 5",
+      "preco": 79.99,
+      "quantidade": 15,
+      "descricao": "Uma estante minimalista e prática para ambientes contemporâneos.",
+      "imgUrl": "/assets/img/estante5.jpeg",
+      "id": 18
+    },
+    {
+      "nome": "Mesa 1",
+      "preco": 59.99,
+      "quantidade": 30,
+      "descricao": "Uma mesa elegante e resistente para espaços de trabalho.",
+      "imgUrl": "/assets/img/mesa1.jpeg",
+      "id": 19
+    },
+    {
+      "nome": "Mesa 2",
+      "preco": 59.99,
+      "quantidade": 32,
+      "descricao": "Uma mesa compacta e versátil para uso doméstico.",
+      "imgUrl": "/assets/img/mesa2.jpeg",
+      "id": 20
+    },
+    {
+      "nome": "Mesa 3",
+      "preco": 59.99,
+      "quantidade": 28,
+      "descricao": "Uma mesa moderna e funcional para ambientes criativos.",
+      "imgUrl": "/assets/img/mesa3.jpeg",
+      "id": 21
+    },
+    {
+      "nome": "Mesa 4",
+      "preco": 59.99,
+      "quantidade": 35,
+      "descricao": "Uma mesa minimalista e prática para espaços multifuncionais.",
+      "imgUrl": "/assets/img/mesa4.jpeg",
+      "id": 22
+    },
+    {
+      "nome": "Mesa 5",
+      "preco": 59.99,
+      "quantidade": 40,
+      "descricao": "Uma mesa elegante e espaçosa para salas de reunião.",
+      "imgUrl": "/assets/img/mesa5.jpeg",
+      "id": 23
+    },
+    {
+      "nome": "Mesa 6",
+      "preco": 59.99,
+      "quantidade": 26,
+      "descricao": "Uma mesa contemporânea e resistente para espaços corporativos.",
+      "imgUrl": "/assets/img/mesa6.jpeg",
+      "id": 24
+    },
+    {
+      "nome": "Mesa 7",
+      "preco": 59.99,
+      "quantidade": 45,
+      "descricao": "Uma mesa prática e versátil para ambientes dinâmicos.",
+      "imgUrl": "/assets/img/mesa7.jpeg",
+      "id": 25
+    },
+    {
+      "nome": "Mesa 8",
+      "preco": 59.99,
+      "quantidade": 20,
+      "descricao": "Uma mesa versátil e elegante para espaços de refeição.",
+      "imgUrl": "/assets/img/mesa8.jpeg",
+      "id": 26
+    },
+    {
+      "nome": "Mesa 9",
+      "preco": 59.99,
+      "quantidade": 18,
+      "descricao": "Uma mesa contemporânea e espaçosa para ambientes sociais.",
+      "imgUrl": "/assets/img/mesa9.jpeg",
+      "id": 27
+    },
+    {
+      "nome": "Rack 1",
+      "preco": 89.99,
+      "quantidade": 12,
+      "descricao": "Um rack espaçoso e moderno para acomodar eletrônicos e decorações.",
+      "imgUrl": "/assets/img/rack1.jpeg",
+      "id": 28
+    },
+    {
+      "nome": "Rack 2",
+      "preco": 89.99,
+      "quantidade": 15,
+      "descricao": "Um rack multifuncional e versátil para ambientes de entretenimento.",
+      "imgUrl": "/assets/img/rack2.jpeg",
+      "id": 29
+    },
+    {
+      "nome": "Rack 3",
+      "preco": 89.99,
+      "quantidade": 20,
+      "descricao": "Um rack elegante e resistente para salas de estar.",
+      "imgUrl": "/assets/img/rack3.jpeg",
+      "id": 30
+    },
+    {
+      "nome": "Rack 4",
+      "preco": 89.99,
+      "quantidade": 18,
+      "descricao": "Um rack compacto e moderno para ambientes contemporâneos.",
+      "imgUrl": "/assets/img/rack4.jpeg",
+      "id": 31
+    },
+    {
+      "nome": "Rack 5",
+      "preco": 89.99,
+      "quantidade": 25,
+      "descricao": "Um rack espaçoso e funcional para organizar seus pertences.",
+      "imgUrl": "/assets/img/rack5.jpeg",
+      "id": 32
+    },
+    {
+      "nome": "Rack 6",
+      "preco": 89.99,
+      "quantidade": 22,
+      "descricao": "Um rack versátil e elegante para espaços de entretenimento.",
+      "imgUrl": "/assets/img/rack6.jpeg",
+      "id": 33
+    },
+    {
+      "nome": "Rack 7",
+      "preco": 89.99,
+      "quantidade": 30,
+      "descricao": "Um rack moderno e espaçoso para ambientes multifuncionais.",
+      "imgUrl": "/assets/img/rack7.jpeg",
+      "id": 34
+    },
+    {
+      "nome": "Rack 8",
+      "preco": 89.99,
+      "quantidade": 28,
+      "descricao": "Um rack minimalista e elegante para espaços contemporâneos.",
+      "imgUrl": "/assets/img/rack8.jpeg",
+      "id": 35
+    },
+    {
+      "nome": "Rack 9",
+      "preco": 89.99,
+      "quantidade": 16,
+      "descricao": "Um rack espaçoso e resistente para ambientes descontraídos.",
+      "imgUrl": "/assets/img/rack9.jpeg",
+      "id": 36
+    },
+    {
+      "nome": "Rack 10",
+      "preco": 89.99,
+      "quantidade": 32,
+      "descricao": "Um rack moderno e versátil para organizar seus objetos.",
+      "imgUrl": "/assets/img/rack10.jpeg",
+      "id": 37
+    },
+    {
+      "nome": "Rack 11",
+      "preco": 89.99,
+      "quantidade": 26,
+      "descricao": "Um rack elegante e funcional para ambientes acolhedores.",
+      "imgUrl": "/assets/img/rack11.jpeg",
+      "id": 38
+    },
+    {
+      "nome": "Sofá 1",
+      "preco": 399.99,
+      "quantidade": 5,
+      "descricao": "Um sofá espaçoso e confortável para salas de estar.",
+      "imgUrl": "/assets/img/sofa1.jpeg",
+      "id": 39
+    }
+  ]
+}

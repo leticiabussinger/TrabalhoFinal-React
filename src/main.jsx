@@ -1,8 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate,
+} from 'react-router-dom';
 import App from './App.jsx';
 import LoginPage from './pages/LoginPage/LoginPage.jsx';
+import RegisterPage from './pages/LoginPage/RegisterPage.jsx';
+import Teste from './components/Teste/Teste.jsx';
+import Teste2 from './components/Teste/Teste2.jsx';
+import ProductPage from './pages/ProductPage/ProductPage.jsx';
+import ProductsPage from './pages/ProductsPage/ProductsPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -10,15 +19,26 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: 'loginasdasd',
-        element: <h1>Login Exemplo</h1>,
+        path: '',
+        element: <Teste />,
+      },
+      {
+        path: 'produtos',
+        element: <ProductsPage />,
+      },
+      {
+        path: 'produtos/:id',
+        element: <ProductPage />,
       },
     ],
   },
   {
     path: '/login',
     element: <LoginPage />,
-    children: [],
+  },
+  {
+    path: '/register',
+    element: <RegisterPage />,
   },
 ]);
 
