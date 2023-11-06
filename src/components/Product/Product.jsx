@@ -1,10 +1,16 @@
-import React from 'react';
-import { Container, ContainerInfos, ProductName } from './styled';
+import React from "react";
+import { Container, ContainerInfos, ProductName } from "./styled";
+import { useNavigate } from "react-router-dom";
 
 const Product = ({ product }) => {
-  const { nome, preco, imgUrl } = product;
+  const { nome, preco, imgUrl, id, categoria } = product;
+  const navigate = useNavigate();
   return (
-    <Container>
+    <Container
+      onClick={() => {
+        navigate(`/${categoria}/produto/${id}`);
+      }}
+    >
       <img src={imgUrl} alt={nome} />
       <ContainerInfos>
         <ProductName>{nome}</ProductName>

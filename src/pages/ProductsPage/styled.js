@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 60%;
-  margin: 60px auto 0 auto;
+  margin: 137px auto 0 auto;
+  min-height: calc(100vh - 251px - 137px); 
+
 `;
 export const ContainerGrid = styled.div`
   display: grid;

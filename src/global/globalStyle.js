@@ -16,6 +16,10 @@ export const GlobalStyle = createGlobalStyle`
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
+        /* min-height: calc(100vh - 137px );
+        position: relative;
+         */
+    
     }
     `;
 export const GlobalStyleLogin = createGlobalStyle`
@@ -24,6 +28,8 @@ export const GlobalStyleLogin = createGlobalStyle`
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
+        /* min-height: calc(100vh + 251px); */
+        /* position: relative; */
     }
 
     *{

@@ -7,6 +7,9 @@ export const FooterTag = styled.footer`
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4.7px);
   -webkit-backdrop-filter: blur(4.7px);
+  /* position: absolute; */
+  /* bottom: 0;
+  width: 100%; */
 `;
 export const Container = styled.div`
   display: flex;

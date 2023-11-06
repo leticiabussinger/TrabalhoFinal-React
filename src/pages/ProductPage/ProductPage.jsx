@@ -12,12 +12,13 @@ import {
   TagPValorDesconto,
 } from './styled';
 import { api } from '../../api/api';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 const ProductPage = () => {
   const [quantity, setQuantity] = React.useState(1);
   const { id } = useParams();
   const [json, SetJson] = React.useState(null);
+  const navigate = useNavigate()
 
   const getProduto = async () => {
     const response = await api.get(`/produtos/${id}`);
@@ -28,7 +29,7 @@ const ProductPage = () => {
     getProduto();
   }, []);
 
-  if (json == null) return null;
+  if (json == null) return <Container/>;
   return (
     <Container>
       <ContainerProduct>
@@ -71,7 +72,7 @@ const ProductPage = () => {
                 +
               </button>
             </ContainerQuantity>
-            <ButtonBuy>Comprar</ButtonBuy>
+            <ButtonBuy onClick={()=>{navigate(`/finalizar-compra/${id}`)}}>Comprar</ButtonBuy>
           </ContainerBuy>
         </ContainerProductInfos>
       </ContainerProduct>

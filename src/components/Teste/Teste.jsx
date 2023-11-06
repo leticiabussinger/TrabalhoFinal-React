@@ -13,8 +13,9 @@ const Teste = () => {
     getUm();
   }, []);
   return (
-    <div>
-      <img style={{ width: '100px' }} src={img} alt="Img Teste" />
+    <div style={{height:"500vh", marginTop:"137px" }}>
+      <h1>Home</h1>
+
     </div>
   );
 };

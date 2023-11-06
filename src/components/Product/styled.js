@@ -21,7 +21,7 @@ export const Container = styled.div`
     object-fit: cover;
   }
 `;
-export const ContainerInfos = styled.p`
+export const ContainerInfos = styled.div`
   padding: 20px;
   h3 {
     margin: 15px 0 5px 0;

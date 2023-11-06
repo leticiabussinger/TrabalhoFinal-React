@@ -12,7 +12,7 @@
       "nome": "Cadeira",
       "preco": 2999.99,
       "favoritos": [],
-      "categoria": "Sala",
+      "categoria": "sala",
       "cor": "",
       "quantidade": 10,
       "descricao": "Uma cadeira muito confortavel",
@@ -23,6 +23,7 @@
       "nome": "Cadeira 2",
       "preco": 29.99,
       "quantidade": 15,
+      "categoria": "sala-de-jantar",
       "descricao": "Uma cadeira com design moderno e estiloso.",
       "imgUrl": "/assets/img/cadeira2.jpeg",
       "id": 2
@@ -31,6 +32,7 @@
       "nome": "Cadeira 3",
       "preco": 29.99,
       "quantidade": 20,
+      "categoria": "banheiro",
       "descricao": "Uma cadeira resistente e confortável para o dia a dia.",
       "imgUrl": "/assets/img/cadeira3.jpeg",
       "id": 3
@@ -39,6 +41,7 @@
       "nome": "Cadeira 4",
       "preco": 29.99,
       "quantidade": 12,
+      "categoria": "quarto",
       "descricao": "Uma cadeira ergonômica e ajustável para longas horas de trabalho.",
       "imgUrl": "/assets/img/cadeira4.jpeg",
       "id": 4
@@ -47,6 +50,7 @@
       "nome": "Cadeira 5",
       "preco": 29.99,
       "quantidade": 18,
+      "categoria": "cozinha",
       "descricao": "Uma cadeira acolchoada e confortável para ambientes descontraídos.",
       "imgUrl": "/assets/img/cadeira5.jpeg",
       "id": 5
@@ -55,6 +59,7 @@
       "nome": "Cadeira 6",
       "preco": 29.99,
       "quantidade": 22,
+      "categoria": "sala-de-estar",
       "descricao": "Uma cadeira compacta e elegante para espaços reduzidos.",
       "imgUrl": "/assets/img/cadeira6.jpeg",
       "id": 6
@@ -63,6 +68,7 @@
       "nome": "Cadeira 7",
       "preco": 29.99,
       "quantidade": 14,
+      "categoria": "sala-de-estar",
       "descricao": "Uma cadeira vibrante e cheia de personalidade para seu escritório.",
       "imgUrl": "/assets/img/cadeira7.jpeg",
       "id": 7
@@ -79,6 +85,7 @@
       "nome": "Cadeira Gamer 2",
       "preco": 29.99,
       "quantidade": 30,
+      "categoria": "sala-de-estar",
       "descricao": "Uma cadeira gamer ergonômica e reclinável para total imersão nos jogos.",
       "imgUrl": "/assets/img/cadeira_gamer2.jpeg",
       "id": 9
@@ -87,6 +94,7 @@
       "nome": "Cadeira Gamer 3",
       "preco": 29.99,
       "quantidade": 28,
+      "categoria": "sala-de-estar",
       "descricao": "Uma cadeira gamer resistente e confortável para jogadores exigentes.",
       "imgUrl": "/assets/img/cadeira_gamer3.jpeg",
       "id": 10
@@ -95,6 +103,7 @@
       "nome": "Comoda 1",
       "preco": 99.99,
       "quantidade": 8,
+      "categoria": "sala-de-estar",
       "descricao": "Uma cômoda espaçosa e elegante para organização de roupas e pertences.",
       "imgUrl": "/assets/img/comoda1.jpeg",
       "id": 11
@@ -103,6 +112,7 @@
       "nome": "Comoda 2",
       "preco": 99.99,
       "quantidade": 10,
+      "categoria": "sala-de-estar",
       "descricao": "Uma cômoda clássica e funcional para quartos modernos.",
       "imgUrl": "/assets/img/comoda2.jpeg",
       "id": 12
@@ -111,6 +121,7 @@
       "nome": "Comoda 3",
       "preco": 99.99,
       "quantidade": 6,
+      "categoria": "sala-de-estar",
       "descricao": "Uma cômoda versátil e compacta para espaços reduzidos.",
       "imgUrl": "/assets/img/comoda3.jpeg",
       "id": 13
