@@ -13,35 +13,82 @@ import {
 } from './styled';
 import { api } from '../../api/api';
 import { useNavigate, useParams } from 'react-router-dom';
+import { UserContext } from '../../context/UserContext';
 
 const ProductPage = () => {
   const [quantity, setQuantity] = React.useState(1);
   const { id } = useParams();
-  const [json, SetJson] = React.useState(null);
-  const navigate = useNavigate()
+  const [produto, setProduto] = React.useState(null);
+  const [userCarrinho, setUserCarrinho] = React.useState([]);
+  const [itemInCart, setItemInCart] = React.useState(null);
+  const { userLogado } = React.useContext(UserContext);
+  const navigate = useNavigate();
 
   const getProduto = async () => {
     const response = await api.get(`/produtos/${id}`);
-    SetJson(response.data);
+    setProduto(response.data);
+  };
+
+  const findCart = (p) => {
+    return p.id == id;
+  };
+  const setItemInCartFunction = () => {
+    const itemInCartFind = userCarrinho.find(findCart);
+    setItemInCart(itemInCartFind);
   };
 
   React.useEffect(() => {
     getProduto();
+    if (userLogado != null) {
+      api
+        .get(`/usuarios/${userLogado.id}`)
+        .then((r) => {
+          setUserCarrinho(r.data.carrinho);
+        })
+        .catch((e) => alert(e));
+    }
   }, []);
 
-  if (json == null) return <Container/>;
+  React.useEffect(() => {
+    setItemInCartFunction();
+  }, [userCarrinho]);
+
+  const handleCarrinho = () => {
+    if (userLogado != null) {
+      if (itemInCart) {
+        console.log(itemInCart);
+        if (quantity != itemInCart.quantidade) {
+          const newCartAdd = userCarrinho.filter((p) => p.id != itemInCart.id);
+          api.patch(`/usuarios/${userLogado.id}`, {
+            carrinho: [
+              ...newCartAdd,
+              { id: itemInCart.id, quantidade: quantity },
+            ],
+          });
+        }
+      } else {
+        console.log(itemInCart);
+        api.patch(`/usuarios/${userLogado.id}`, {
+          carrinho: [...userCarrinho, { id: Number(id), quantidade: quantity }],
+        });
+      }
+    } else {
+    }
+  };
+
+  if (produto == null) return <Container />;
   return (
     <Container>
       <ContainerProduct>
-        <ImgProduct src={json.imgUrl} alt={json.nome} />
+        <ImgProduct src={produto.imgUrl} alt={produto.nome} />
         <ContainerProductInfos>
-          <h2>{json.nome}</h2>
+          <h2>{produto.nome}</h2>
           <p>Vendido e entregue por SerraDecor</p>
           <TagPValorDesconto>
-            R$ {(json.preco * 0.95).toFixed(2)}
+            R$ {(produto.preco * 0.95).toFixed(2)}
           </TagPValorDesconto>
           <TagPValor>à vista no cartão ou Pix (5% OFF)</TagPValor>
-          <TagPValor>ou R$ {json.preco} em 10x sem juros</TagPValor>
+          <TagPValor>ou R$ {produto.preco} em 10x sem juros</TagPValor>
           <ContainerBuy>
             <ContainerQuantity>
               <button
@@ -61,7 +108,7 @@ const ProductPage = () => {
               <button
                 onClick={() =>
                   setQuantity((q) => {
-                    if (q < json.quantidade) {
+                    if (q < produto.quantidade) {
                       return q + 1;
                     } else {
                       return q;
@@ -72,13 +119,20 @@ const ProductPage = () => {
                 +
               </button>
             </ContainerQuantity>
-            <ButtonBuy onClick={()=>{navigate(`/finalizar-compra/${id}`)}}>Comprar</ButtonBuy>
+            <ButtonBuy onClick={handleCarrinho}>Adicionar ao carinho</ButtonBuy>
+            <ButtonBuy
+              onClick={() => {
+                navigate(`/finalizar-compra/${id}`);
+              }}
+            >
+              Comprar
+            </ButtonBuy>
           </ContainerBuy>
         </ContainerProductInfos>
       </ContainerProduct>
       <ContainerProductDetails>
         <h3>Descrição</h3>
-        <p>{json.descricao}</p>
+        <p>{produto.descricao}</p>
       </ContainerProductDetails>
     </Container>
   );

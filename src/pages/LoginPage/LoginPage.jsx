@@ -1,6 +1,6 @@
-import React from "react";
-import { GlobalStyleLogin } from "../../global/globalStyle";
-import Footer from "../../components/Footer/Footer";
+import React from 'react';
+import { GlobalStyleLogin } from '../../global/globalStyle';
+import Footer from '../../components/Footer/Footer';
 import {
   ButtonTag,
   ContainerLogin,
@@ -8,16 +8,16 @@ import {
   LogoSite,
   NoAccountP,
   TitleForm,
-} from "./styled";
-import Input from "../../components/Input/Input";
-import Logo from "../../assets/img/logo.png";
-import { api } from "../../api/api";
-import { useNavigate } from "react-router-dom";
-import { UserContext } from "../../context/UserContext";
+} from './styled';
+import Input from '../../components/Input/Input';
+import Logo from '../../assets/img/logo.png';
+import { api } from '../../api/api';
+import { useNavigate } from 'react-router-dom';
+import { UserContext } from '../../context/UserContext';
 
 const LoginPage = () => {
-  const [email, setEmail] = React.useState("");
-  const [senha, setSenha] = React.useState("");
+  const [email, setEmail] = React.useState('');
+  const [senha, setSenha] = React.useState('');
   const { setUserLogado } = React.useContext(UserContext);
   const navigate = useNavigate();
 
@@ -26,8 +26,15 @@ const LoginPage = () => {
     const response = await api.get(`/usuarios?email=${email}`);
     if (response.data.length != 0) {
       if (response.data[0].senha == senha) {
-        setUserLogado(response.data[0].nome);
-        navigate("/");
+        setUserLogado({ id: response.data[0].id, nome: response.data[0].nome });
+        localStorage.setItem(
+          'userLogado',
+          JSON.stringify({
+            id: response.data[0].id,
+            nome: response.data[0].nome,
+          }),
+        );
+        navigate('/');
       }
     }
   };

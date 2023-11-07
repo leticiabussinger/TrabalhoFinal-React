@@ -4,7 +4,21 @@
       "nome": "Rhayllon",
       "email": "email@teste.com",
       "senha": "false",
-      "id": 1
+      "id": 1,
+      "carrinho": [
+        {
+          "id": 4,
+          "quantidade": 1
+        },
+        {
+          "id": 7,
+          "quantidade": 1
+        },
+        {
+          "id": 9,
+          "quantidade": 1
+        }
+      ]
     }
   ],
   "produtos": [

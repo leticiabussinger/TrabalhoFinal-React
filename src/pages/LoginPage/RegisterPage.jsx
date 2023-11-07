@@ -24,6 +24,7 @@ const RegisterPage = () => {
       nome,
       email,
       senha,
+      carinho: [],
     });
   };
 
