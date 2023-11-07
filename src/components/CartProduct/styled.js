@@ -2,17 +2,21 @@ import styled from "styled-components";
 
 export const ContainerProduct = styled.div`
   display: flex;
-  flex:1;
+  flex: 1;
   gap: 40px;
   height: max-content;
+  padding: 1%;
+  
 `;
 export const ImgProduct = styled.img`
   width: 140px;
+  border-radius: 8px;
 `;
 export const ContainerProductInfos = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
+  justify-content: space-between;
 
   h2 {
     text-align: start;
@@ -31,37 +35,37 @@ export const ContainerProductDetails = styled.div`
 `;
 export const ContainerQuantity = styled.div`
   display: flex;
-  border: 1px solid #c69857;
+  border: 2px solid #6d6d6f;
   border-radius: 4px;
   width: max-content;
   height: max-content;
-  background-color: #efefef;
+  background-color: #232426;
   padding: 4px;
   input {
-    border: none;
+     border: none;
     width: 40px;
-    outline: 0;
-    text-align: center;
-    background-color: #efefef;
+    text-align: end;
+    background-color: #232426;
     font-size: 16px;
-    color: black;
+    color: #d9d9db;
     font-weight: bold;
-
+    
+    
   }
   button {
     border: none;
-    border-radius: 4px;
+    border-radius:  4px;
     width: 30px;
     cursor: pointer;
-    background-color: #efefef;
+    background-color: #232426;
     outline: 0;
     font-size: 20px;
     padding: 4px;
-    color: #c69857;
+    color: #d9d9db;
     font-weight: bold;
   }
   button:hover {
-    background-color: #e5e5e5;
+    background-color: #3b3b3d;
   }
 `;
 export const TagPValorDesconto = styled.p`
@@ -83,4 +87,3 @@ export const TagPValorParcelado = styled.p`
 export const ContainerBuy = styled.div`
   margin-top: 20px;
 `;
-

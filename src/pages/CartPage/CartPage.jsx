@@ -3,10 +3,13 @@ import { useParams } from "react-router-dom";
 import React from "react";
 import {
   ButtonBuy,
+  CartProductTitle,
   Container,
   ContainerFinishBuy,
   ContainerSubtotalFrete,
   ContainerTotal,
+  Linha,
+  Product,
   ValorTotal,
 } from "./styled";
 import CartProduct from "../../components/CartProduct/CartProduct";
@@ -27,10 +30,16 @@ const CartPage = () => {
   if (json == null) return <Container />;
   return (
     <Container>
-      {/* {json.map((p) => {
-        <CartProduct product={p} />;
-      })} */}
-      <CartProduct product={json} />;
+      <Product>
+        <CartProductTitle>
+          <h1>Carrinho</h1>
+        </CartProductTitle>
+        <Linha />
+        <CartProduct product={json} />
+        <Linha />
+        
+        
+      </Product>
       <ContainerFinishBuy>
         <ContainerSubtotalFrete>
           <p>Subtotal</p>

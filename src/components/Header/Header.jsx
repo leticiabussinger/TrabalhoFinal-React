@@ -15,7 +15,13 @@ const Header = () => {
   const { userLogado } = React.useContext(UserContext);
   const [pesquisa, setPesquisa] = React.useState('');
   const navigate = useNavigate();
-
+  
+  function searchEnterPress(event) {
+    if (event.key === 'Enter') {
+      search();
+    }
+  }
+  
   function search() {
     navigate(`/${pesquisa}`);
   }
@@ -31,6 +37,8 @@ const Header = () => {
               onChange={({ target }) => {
                 setPesquisa(target.value);
               }}
+              
+              onKeyUp={searchEnterPress}
             />
             <img src={Lupa} alt="Icone de lupa" onClick={search} />
           </ContainerSearchBar>

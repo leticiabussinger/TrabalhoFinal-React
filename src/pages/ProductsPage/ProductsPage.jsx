@@ -1,8 +1,8 @@
-import React from 'react';
-import Product from '../../components/Product/Product';
-import { api } from '../../api/api';
-import { Container, ContainerGrid } from './styled';
-import { useParams } from 'react-router-dom';
+import React from "react";
+import Product from "../../components/Product/Product";
+import { api } from "../../api/api";
+import { Container, ContainerGrid } from "./styled";
+import { useParams } from "react-router-dom";
 
 const ProductsPage = () => {
   const [json, SetJson] = React.useState(null);
@@ -21,12 +21,14 @@ const ProductsPage = () => {
 
   React.useEffect(() => {
     if (
-      categoria == 'sala-de-estar' ||
-      categoria == 'banheiro' ||
-      categoria == 'sala-de-jantar' ||
-      categoria == 'escritorio' ||
-      categoria == 'cozinha' ||
-      categoria == 'quarto'
+      [
+        "sala-de-estar",
+        "banheiro",
+        "sala-de-jantar",
+        "escritorio",
+        "cozinha",
+        "quarto",
+      ].includes(categoria)
     ) {
       getProdutosCategoria();
     } else {

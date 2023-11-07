@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
-import Fundo from '../assets/img/fundo2.png';
-import FundoLogin from '../assets/img/fundologin1.png';
+import { createGlobalStyle } from "styled-components";
+import Fundo from "../assets/img/fundo2.png";
+import FundoLogin from "../assets/img/fundologin1.png";
 
 export const GlobalStyle = createGlobalStyle`
     *{
@@ -8,18 +8,16 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-family: 'Montserrat', sans-serif;
+
     }
     body{
-        background-color: #faeecc;
-        background-image: url(${Fundo});
+        /* background-color: #faeecc; */
+        background-color: #232426;
+        /* background-image: url(${Fundo}); */
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        background-attachment: fixed;
-        /* min-height: calc(100vh - 137px );
-        position: relative;
-         */
-    
+            
     }
     `;
 export const GlobalStyleLogin = createGlobalStyle`
