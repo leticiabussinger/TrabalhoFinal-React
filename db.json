@@ -4,349 +4,1108 @@
       "nome": "Rhayllon",
       "email": "email@teste.com",
       "senha": "false",
-      "id": 1,
-      "carrinho": [
+      "carrinho": [],
+      "id": 1
+    },
+    {
+      "nome": "Bernardo",
+      "email": "bernardo@gmail.com",
+      "senha": "bernardo",
+      "carinho": [],
+      "id": 2
+    },
+    {
+      "nome": "Danilo",
+      "email": "danilo@gmail.com",
+      "senha": "senhadanilo",
+      "carinho": [],
+      "id": 3
+    },
+    {
+      "nome": "Danilo",
+      "email": "danilo@gmail.com",
+      "senha": "senhadanilo",
+      "carinho": [],
+      "id": 4
+    },
+    {
+      "nome": "Danilo",
+      "email": "danilo@gmail.com",
+      "senha": "senhadanilo",
+      "carinho": [],
+      "id": 5
+    },
+    {
+      "nome": "Danilo",
+      "email": "danilo@gmail.com",
+      "senha": "senhadanilo",
+      "carinho": [],
+      "id": 6
+    },
+    {
+      "nome": "Danilo",
+      "email": "danilo@gmail.com",
+      "senha": "senhadanilo",
+      "carinho": [],
+      "id": 7
+    }
+  ],
+  "pedidos": [
+    {
+      "itens": [
         {
-          "id": 4,
-          "quantidade": 1
+          "nome": "Sofá Tiê 3 Lugares 218cm",
+          "preco": 2609,
+          "favoritos": [],
+          "categoria": "sala-de-estar",
+          "cor": [
+            "cinza"
+          ],
+          "quantidade": 4,
+          "descricao": "Sofá Tiê 3 Lugares 218cm em Linho CabeCasa MadeiraMadeira Cinza",
+          "imgUrl": "/assets/img/estar2.jpeg",
+          "id": 14
         },
         {
-          "id": 7,
-          "quantidade": 1
+          "nome": "Cozinha Modulada Compacta CabeCasa",
+          "preco": 3446.9,
+          "favoritos": [],
+          "categoria": "cozinha",
+          "cor": [
+            "Azul"
+          ],
+          "quantidade": 1,
+          "descricao": "Cozinha Modulada Compacta 4 Peças com Armário Aéreo 2 Portas Vidro Arizona CabeCasa MadeiraMadeira Branco",
+          "imgUrl": "/assets/img/cozinha2.jpeg",
+          "id": 62
         },
         {
-          "id": 9,
-          "quantidade": 1
+          "nome": "Balcão de Canto Oblíquo Arizona",
+          "preco": 867.9,
+          "favoritos": [],
+          "categoria": "cozinha",
+          "cor": [
+            "branco",
+            "azul"
+          ],
+          "quantidade": 2,
+          "descricao": "Balcão de Canto Oblíquo Arizona CabeCasa MadeiraMadeira Branco/Cinza",
+          "imgUrl": "/assets/img/cozinha5.jpeg",
+          "id": 65
+        },
+        {
+          "nome": "Estante para Livros Star Plus Haia",
+          "preco": 870,
+          "favoritos": [],
+          "categoria": "sala-de-estar",
+          "cor": [
+            "amendoa",
+            "branco"
+          ],
+          "quantidade": 7,
+          "descricao": "Estante para Livros Haia 1,85x1,9m Yescasa Amêndoa/Branco",
+          "imgUrl": "/assets/img/estar8.jpeg",
+          "id": 20
         }
-      ]
+      ],
+      "valorTotal": 11273.8,
+      "idUser": 1,
+      "id": 1
+    },
+    {
+      "itens": [
+        {
+          "nome": "Cozinha Modulada Compacta CabeCasa",
+          "preco": 3446.9,
+          "favoritos": [],
+          "categoria": "cozinha",
+          "cor": [
+            "Azul"
+          ],
+          "quantidade": 1,
+          "descricao": "Cozinha Modulada Compacta 4 Peças com Armário Aéreo 2 Portas Vidro Arizona CabeCasa MadeiraMadeira Branco",
+          "imgUrl": "/assets/img/cozinha2.jpeg",
+          "id": 62
+        },
+        {
+          "nome": "Sofá Tiê 3 Lugares 218cm",
+          "preco": 2609,
+          "favoritos": [],
+          "categoria": "sala-de-estar",
+          "cor": [
+            "cinza"
+          ],
+          "quantidade": 4,
+          "descricao": "Sofá Tiê 3 Lugares 218cm em Linho CabeCasa MadeiraMadeira Cinza",
+          "imgUrl": "/assets/img/estar2.jpeg",
+          "id": 14
+        },
+        {
+          "nome": "Gabinete Suspenso para Banheiro Golden",
+          "preco": 519,
+          "favoritos": [],
+          "categoria": "banheiro",
+          "cor": [
+            "Preto",
+            "grafite"
+          ],
+          "quantidade": 3,
+          "descricao": "Gabinete Suspenso para Banheiro 80cm com Cuba Placa e Ponto Preto/Grafite",
+          "imgUrl": "/assets/img/banheiro1.jpeg",
+          "id": 48
+        },
+        {
+          "nome": "Guarda-Roupa Casal Costa Rica Sallêto",
+          "preco": 900,
+          "favoritos": [],
+          "categoria": "quarto",
+          "cor": [
+            "Branco"
+          ],
+          "quantidade": 6,
+          "descricao": "Guarda-Roupa Casal 3 Portas com Espelho Central e 4 Gavetas Costa Rica Sallêto Móveis Ipê/Off",
+          "imgUrl": "/assets/img/quarto3.jpeg",
+          "id": 27
+        }
+      ],
+      "valorTotal": 11974.9,
+      "idUser": 1,
+      "id": 2
     }
   ],
   "produtos": [
     {
-      "nome": "Cadeira",
-      "preco": 2999.99,
+      "nome": "Conjunto de Sala de jantar Star - 6 cadeiras",
+      "preco": 1299.9,
       "favoritos": [],
-      "categoria": "sala",
-      "cor": "",
-      "quantidade": 10,
-      "descricao": "Uma cadeira muito confortavel",
-      "imgUrl": "/assets/img/Cadeira.png",
+      "categoria": "sala-de-jantar",
+      "cor": [
+        "marron"
+      ],
+      "quantidade": 12,
+      "descricao": "Conjunto de Sala de jantar com mesa de tampo de vidro e 6 cadeiras",
+      "imgUrl": "/assets/img/jantar1.jpeg",
       "id": 1
     },
     {
-      "nome": "Cadeira 2",
-      "preco": 29.99,
-      "quantidade": 15,
+      "nome": "Conjunto de Sala de jantar Paris Plus - 8 cadeiras",
+      "preco": 2999.91,
+      "favoritos": [],
       "categoria": "sala-de-jantar",
-      "descricao": "Uma cadeira com design moderno e estiloso.",
-      "imgUrl": "/assets/img/cadeira2.jpeg",
+      "cor": [
+        "preto",
+        "madeira natural"
+      ],
+      "quantidade": 9,
+      "descricao": "Conjunto de Sala de jantar com mesa em tampo de vidro com 8 cadeiras e madeira maciça",
+      "imgUrl": "/assets/img/jantar2.jpeg",
       "id": 2
     },
     {
-      "nome": "Cadeira 3",
-      "preco": 29.99,
-      "quantidade": 20,
-      "categoria": "banheiro",
-      "descricao": "Uma cadeira resistente e confortável para o dia a dia.",
-      "imgUrl": "/assets/img/cadeira3.jpeg",
+      "nome": "Mesa de jantar redonda London - 4 cadeiras",
+      "preco": 1599.9,
+      "favoritos": [],
+      "categoria": "sala-de-jantar",
+      "cor": [
+        "branco",
+        "madeira natural"
+      ],
+      "quantidade": 17,
+      "descricao": "Conjunto de Sala de jantar com mesa redonda e 4 cadeiras",
+      "imgUrl": "/assets/img/jantar3.jpeg",
       "id": 3
     },
     {
-      "nome": "Cadeira 4",
-      "preco": 29.99,
-      "quantidade": 12,
-      "categoria": "quarto",
-      "descricao": "Uma cadeira ergonômica e ajustável para longas horas de trabalho.",
-      "imgUrl": "/assets/img/cadeira4.jpeg",
+      "nome": "Mesa de jantar MDP 4 cadeiras",
+      "preco": 999.9,
+      "favoritos": [],
+      "categoria": "sala-de-jantar",
+      "cor": [
+        "chumbo",
+        "Prata"
+      ],
+      "quantidade": 6,
+      "descricao": "Conjunto de Sala de jantar com mesa com tampo de vidro e MDP, COM 4 cadeiras",
+      "imgUrl": "/assets/img/jantar4.jpeg",
       "id": 4
     },
     {
-      "nome": "Cadeira 5",
-      "preco": 29.99,
-      "quantidade": 18,
-      "categoria": "cozinha",
-      "descricao": "Uma cadeira acolchoada e confortável para ambientes descontraídos.",
-      "imgUrl": "/assets/img/cadeira5.jpeg",
+      "nome": "Mesa de jantar London - 6 lugares",
+      "preco": 2199.89,
+      "favoritos": [],
+      "categoria": "sala-de-jantar",
+      "cor": [
+        "caramelo",
+        "chocolate"
+      ],
+      "quantidade": 4,
+      "descricao": "Conjunto de Sala de jantar com 6 lugares com mesa e cadeira em veludo",
+      "imgUrl": "/assets/img/jantar5.jpeg",
       "id": 5
     },
     {
-      "nome": "Cadeira 6",
-      "preco": 29.99,
-      "quantidade": 22,
-      "categoria": "sala-de-estar",
-      "descricao": "Uma cadeira compacta e elegante para espaços reduzidos.",
-      "imgUrl": "/assets/img/cadeira6.jpeg",
+      "nome": "Mesa de jantar Alvorada com canto reto - 6 cadeiras",
+      "preco": 1579.9,
+      "favoritos": [],
+      "categoria": "sala-de-jantar",
+      "cor": [
+        "branco",
+        "madeira natural"
+      ],
+      "quantidade": 11,
+      "descricao": "Conjunto de Sala de jantar com mesa Tp MDF tampo de vidro e canto reto acompanhando 6 cadeiras",
+      "imgUrl": "/assets/img/jantar6.jpeg",
       "id": 6
     },
     {
-      "nome": "Cadeira 7",
-      "preco": 29.99,
-      "quantidade": 14,
-      "categoria": "sala-de-estar",
-      "descricao": "Uma cadeira vibrante e cheia de personalidade para seu escritório.",
-      "imgUrl": "/assets/img/cadeira7.jpeg",
+      "nome": "Mesa de jantar tampo de vidro Plus - 6 cadeiras",
+      "preco": 1399.9,
+      "favoritos": [],
+      "categoria": "sala-de-jantar",
+      "cor": [
+        "chocolate"
+      ],
+      "quantidade": 3,
+      "descricao": "Conjunto de Sala de jantar com mesa com tampo de vidro dakota Plus com 6 cadeiras Laura Yescasa",
+      "imgUrl": "/assets/img/jantar7.jpeg",
       "id": 7
     },
     {
-      "nome": "Cadeira Gamer 1",
-      "preco": 29.99,
-      "quantidade": 25,
-      "descricao": "Uma cadeira gamer estilosa e confortável para longas sessões de jogos.",
-      "imgUrl": "/assets/img/cadeira_gamer1.jpeg",
+      "nome": "Mesa redonda Nuance Mônaco Yescasa - 6 cadeiras ",
+      "preco": 2599.91,
+      "favoritos": [],
+      "categoria": "sala-de-jantar",
+      "cor": [
+        "castanho",
+        "creme"
+      ],
+      "quantidade": 0,
+      "descricao": "Conjunto de Sala de jantar com mesa redonda Nunace e tampo de vidro/MDF com 6 cadeiras Mônaco Yescasa",
+      "imgUrl": "/assets/img/jantar8.jpeg",
       "id": 8
     },
     {
-      "nome": "Cadeira Gamer 2",
-      "preco": 29.99,
-      "quantidade": 30,
-      "categoria": "sala-de-estar",
-      "descricao": "Uma cadeira gamer ergonômica e reclinável para total imersão nos jogos.",
-      "imgUrl": "/assets/img/cadeira_gamer2.jpeg",
+      "nome": "Conjunto sala de jantar Itália Espresso - 6 cadeiras ",
+      "preco": 2079.9,
+      "favoritos": [],
+      "categoria": "sala-de-jantar",
+      "cor": [
+        "branco"
+      ],
+      "quantidade": 2,
+      "descricao": "Conjunto de Sala de jantar com mesa com tampo de vidro e MDF, 8 cadeiras Itália Espresso",
+      "imgUrl": "/assets/img/jantar9.jpeg",
       "id": 9
     },
     {
-      "nome": "Cadeira Gamer 3",
-      "preco": 29.99,
-      "quantidade": 28,
-      "categoria": "sala-de-estar",
-      "descricao": "Uma cadeira gamer resistente e confortável para jogadores exigentes.",
-      "imgUrl": "/assets/img/cadeira_gamer3.jpeg",
+      "nome": "Conjunto Mesa de Jantar Estilo Industrial",
+      "preco": 399.9,
+      "favoritos": [],
+      "categoria": "sala-de-jantar",
+      "cor": [
+        "preto"
+      ],
+      "quantidade": 2,
+      "descricao": "Conjunto Mesa de Jantar com 2 Bancos Estilo Industrial Active Yescasa Nogal",
+      "imgUrl": "/assets/img/jantar10.jpeg",
       "id": 10
     },
     {
-      "nome": "Comoda 1",
-      "preco": 99.99,
-      "quantidade": 8,
-      "categoria": "sala-de-estar",
-      "descricao": "Uma cômoda espaçosa e elegante para organização de roupas e pertences.",
-      "imgUrl": "/assets/img/comoda1.jpeg",
+      "nome": "Conjunto Sala de Jantar Apogeu - 6 Cadeiras",
+      "preco": 1599.9,
+      "favoritos": [],
+      "categoria": "sala-de-jantar",
+      "cor": [
+        "branco"
+      ],
+      "quantidade": 7,
+      "descricao": "Conjunto Sala de Jantar Mesa Tampo de Vidro/MDF 6 Cadeiras Apogeu Móveis Lopas Amêndoa Clean/Off White/Linho Rinzai Bege",
+      "imgUrl": "/assets/img/jantar11.jpeg",
       "id": 11
     },
     {
-      "nome": "Comoda 2",
-      "preco": 99.99,
-      "quantidade": 10,
-      "categoria": "sala-de-estar",
-      "descricao": "Uma cômoda clássica e funcional para quartos modernos.",
-      "imgUrl": "/assets/img/comoda2.jpeg",
+      "nome": "Conjunto Mesa de Jantar Atena - 6 cadeiras",
+      "preco": 1599.9,
+      "favoritos": [],
+      "categoria": "sala-de-jantar",
+      "cor": [
+        "branco"
+      ],
+      "quantidade": 5,
+      "descricao": "Conjunto Sala de Jantar Mesa com Tampo de Vidro Safira 6 Cadeiras Atena Lj Móveis Castanho Prêmio/Off White",
+      "imgUrl": "/assets/img/jantar12.jpeg",
       "id": 12
     },
     {
-      "nome": "Comoda 3",
-      "preco": 99.99,
-      "quantidade": 6,
+      "nome": "Sofá Retrátil/Reclinável Verona 2,30M",
+      "preco": 1636,
+      "favoritos": [],
       "categoria": "sala-de-estar",
-      "descricao": "Uma cômoda versátil e compacta para espaços reduzidos.",
-      "imgUrl": "/assets/img/comoda3.jpeg",
+      "cor": [
+        "cinza"
+      ],
+      "quantidade": 4,
+      "descricao": "Sofá Retrátil/Reclinável Verona 2,30M Suede Velut Cinza com Molas No Assento - King House CinzaRetrátil/Reclinável Verona 2,30M Suede Velut Cinza com Molas No Assento - King House Cinza",
+      "imgUrl": "/assets/img/estar1.jpeg",
       "id": 13
     },
     {
-      "nome": "Estante 1",
-      "preco": 79.99,
-      "quantidade": 20,
-      "descricao": "Uma estante espaçosa e versátil para livros e decoração.",
-      "imgUrl": "/assets/img/estante1.jpeg",
+      "nome": "Sofá Tiê 3 Lugares 218cm",
+      "preco": 2609,
+      "favoritos": [],
+      "categoria": "sala-de-estar",
+      "cor": [
+        "cinza"
+      ],
+      "quantidade": 4,
+      "descricao": "Sofá Tiê 3 Lugares 218cm em Linho CabeCasa MadeiraMadeira Cinza",
+      "imgUrl": "/assets/img/estar2.jpeg",
       "id": 14
     },
     {
-      "nome": "Estante 2",
-      "preco": 79.99,
-      "quantidade": 18,
-      "descricao": "Uma estante moderna e elegante para organizar seus objetos favoritos.",
-      "imgUrl": "/assets/img/estante2.jpeg",
+      "nome": "Sofá Connect Premium 2,00m",
+      "preco": 1295,
+      "favoritos": [],
+      "categoria": "sala-de-estar",
+      "cor": [
+        "cinza"
+      ],
+      "quantidade": 3,
+      "descricao": "Sofá Connect Premium 2,00m Assento Retrátil/Reclinável com porta copos e entrada USB Suede Cinza Cinza",
+      "imgUrl": "/assets/img/estar3.jpeg",
       "id": 15
     },
     {
-      "nome": "Estante 3",
-      "preco": 79.99,
-      "quantidade": 22,
-      "descricao": "Uma estante rústica e prática para ambientes aconchegantes.",
-      "imgUrl": "/assets/img/estante3.jpeg",
+      "nome": "Rack para TV até 85' com LED",
+      "preco": 1020,
+      "favoritos": [],
+      "categoria": "sala-de-estar",
+      "cor": [
+        "cinza",
+        "branco"
+      ],
+      "quantidade": 3,
+      "descricao": "Rack para TV até 85 Polegadas com LED com Pés Ferro 230cm Splendore Yescasa Cinza/Mármore Branco",
+      "imgUrl": "/assets/img/estar4.jpeg",
       "id": 16
     },
     {
-      "nome": "Estante 4",
-      "preco": 79.99,
-      "quantidade": 25,
-      "descricao": "Uma estante multifuncional e elegante para espaços de convívio.",
-      "imgUrl": "/assets/img/estante4.jpeg",
+      "nome": "Rack para TV até 82' Marmorizado",
+      "preco": 639.9,
+      "favoritos": [],
+      "categoria": "sala-de-estar",
+      "cor": [
+        "branco"
+      ],
+      "quantidade": 3,
+      "descricao": "Rack para TV até 82 polegadas 4 portas Marmorizado Ibiza Yescasa Off White Matte/Calacatta/Freijó",
+      "imgUrl": "/assets/img/estar5.jpeg",
       "id": 17
     },
     {
-      "nome": "Estante 5",
-      "preco": 79.99,
-      "quantidade": 15,
-      "descricao": "Uma estante minimalista e prática para ambientes contemporâneos.",
-      "imgUrl": "/assets/img/estante5.jpeg",
+      "nome": "Rack para TV até 50' Soho CabeCasa",
+      "preco": 1129.9,
+      "favoritos": [],
+      "categoria": "sala-de-estar",
+      "cor": [
+        "mel",
+        "preto"
+      ],
+      "quantidade": 0,
+      "descricao": "Rack para TV até 50 Polegadas 180cm Soho CabeCasa MadeiraMadeira Carvalho Mel/Preto",
+      "imgUrl": "/assets/img/estar6.jpeg",
       "id": 18
     },
     {
-      "nome": "Mesa 1",
-      "preco": 59.99,
-      "quantidade": 30,
-      "descricao": "Uma mesa elegante e resistente para espaços de trabalho.",
-      "imgUrl": "/assets/img/mesa1.jpeg",
+      "nome": "Estante com 5 prateleiras Concept CabeCasa",
+      "preco": 1129.9,
+      "favoritos": [],
+      "categoria": "sala-de-estar",
+      "cor": [
+        "ameixa",
+        "preto"
+      ],
+      "quantidade": 5,
+      "descricao": "Estante com 5 prateleiras 184,5X70X44,5cm Concept CabeCasa MadeiraMadeira Ameixa Negra/Preto",
+      "imgUrl": "/assets/img/estar7.jpeg",
       "id": 19
     },
     {
-      "nome": "Mesa 2",
-      "preco": 59.99,
-      "quantidade": 32,
-      "descricao": "Uma mesa compacta e versátil para uso doméstico.",
-      "imgUrl": "/assets/img/mesa2.jpeg",
+      "nome": "Estante para Livros Star Plus Haia",
+      "preco": 870,
+      "favoritos": [],
+      "categoria": "sala-de-estar",
+      "cor": [
+        "amendoa",
+        "branco"
+      ],
+      "quantidade": 7,
+      "descricao": "Estante para Livros Haia 1,85x1,9m Yescasa Amêndoa/Branco",
+      "imgUrl": "/assets/img/estar8.jpeg",
       "id": 20
     },
     {
-      "nome": "Mesa 3",
-      "preco": 59.99,
-      "quantidade": 28,
-      "descricao": "Uma mesa moderna e funcional para ambientes criativos.",
-      "imgUrl": "/assets/img/mesa3.jpeg",
+      "nome": "Conjunto 2 Estantes para Livros Industrial",
+      "preco": 460,
+      "favoritos": [],
+      "categoria": "sala-de-estar",
+      "cor": [
+        "Pinho",
+        "preto"
+      ],
+      "quantidade": 2,
+      "descricao": "Conjunto 2 Estantes para Livros Industrial 2 Portas Mdp Match Espresso Móveis Pinho/Preto",
+      "imgUrl": "/assets/img/estar9.jpeg",
       "id": 21
     },
     {
-      "nome": "Mesa 4",
-      "preco": 59.99,
-      "quantidade": 35,
-      "descricao": "Uma mesa minimalista e prática para espaços multifuncionais.",
-      "imgUrl": "/assets/img/mesa4.jpeg",
+      "nome": "Rack com Painel para TV até 85' Splendore",
+      "preco": 2070,
+      "favoritos": [],
+      "categoria": "sala-de-estar",
+      "cor": [
+        "branco",
+        "cinza"
+      ],
+      "quantidade": 2,
+      "descricao": "Rack com Painel para TV até 85 Polegadas 2 Portas com LED com Pés Ferro 240cm Splendore Yescasa Mármore Branco/Cinza",
+      "imgUrl": "/assets/img/estar10.jpeg",
       "id": 22
     },
     {
-      "nome": "Mesa 5",
-      "preco": 59.99,
-      "quantidade": 40,
-      "descricao": "Uma mesa elegante e espaçosa para salas de reunião.",
-      "imgUrl": "/assets/img/mesa5.jpeg",
+      "nome": "Rack com Painel para TV até 75' Cronos Yescasa",
+      "preco": 1700,
+      "favoritos": [],
+      "categoria": "sala-de-estar",
+      "cor": [
+        "branco",
+        "madeira"
+      ],
+      "quantidade": 7,
+      "descricao": "Rack com Painel para TV até 75 Polegadas 220cm Cronos Yescasa Freijo/ Off White",
+      "imgUrl": "/assets/img/estar11.jpeg",
       "id": 23
     },
     {
-      "nome": "Mesa 6",
-      "preco": 59.99,
-      "quantidade": 26,
-      "descricao": "Uma mesa contemporânea e resistente para espaços corporativos.",
-      "imgUrl": "/assets/img/mesa6.jpeg",
+      "nome": "Rack com painel para TV até 75'com LED",
+      "preco": 1629,
+      "favoritos": [],
+      "categoria": "sala-de-estar",
+      "cor": [
+        "Cinza"
+      ],
+      "quantidade": 3,
+      "descricao": "Rack com Painel para TV até 75 Polegadas com Fita de LED 220cm Cronos Yescasa Freijo/ Off White",
+      "imgUrl": "/assets/img/estar12.jpeg",
       "id": 24
     },
     {
-      "nome": "Mesa 7",
-      "preco": 59.99,
-      "quantidade": 45,
-      "descricao": "Uma mesa prática e versátil para ambientes dinâmicos.",
-      "imgUrl": "/assets/img/mesa7.jpeg",
+      "nome": "Guarda-Roupa Solteiro Peônia Yescasa",
+      "preco": 655,
+      "favoritos": [],
+      "categoria": "quarto",
+      "cor": [
+        "Branco"
+      ],
+      "quantidade": 3,
+      "descricao": "Guarda-Roupa Solteiro 2 Portas de Correr 2 Gavetas e Espelho Peônia Yescasa Branco",
+      "imgUrl": "/assets/img/quarto1.jpeg",
       "id": 25
     },
     {
-      "nome": "Mesa 8",
-      "preco": 59.99,
-      "quantidade": 20,
-      "descricao": "Uma mesa versátil e elegante para espaços de refeição.",
-      "imgUrl": "/assets/img/mesa8.jpeg",
+      "nome": "Guarda Roupa Casal Portugal Espresso",
+      "preco": 1735,
+      "favoritos": [],
+      "categoria": "quarto",
+      "cor": [
+        "Branco"
+      ],
+      "quantidade": 5,
+      "descricao": "Guarda Roupa Casal 6 Portas 8 Gavetas Portugal Espresso Móveis Cinamomo/Off-White",
+      "imgUrl": "/assets/img/quarto2.jpeg",
       "id": 26
     },
     {
-      "nome": "Mesa 9",
-      "preco": 59.99,
-      "quantidade": 18,
-      "descricao": "Uma mesa contemporânea e espaçosa para ambientes sociais.",
-      "imgUrl": "/assets/img/mesa9.jpeg",
+      "nome": "Guarda-Roupa Casal Costa Rica Sallêto",
+      "preco": 900,
+      "favoritos": [],
+      "categoria": "quarto",
+      "cor": [
+        "Branco"
+      ],
+      "quantidade": 6,
+      "descricao": "Guarda-Roupa Casal 3 Portas com Espelho Central e 4 Gavetas Costa Rica Sallêto Móveis Ipê/Off",
+      "imgUrl": "/assets/img/quarto3.jpeg",
       "id": 27
     },
     {
-      "nome": "Rack 1",
-      "preco": 89.99,
-      "quantidade": 12,
-      "descricao": "Um rack espaçoso e moderno para acomodar eletrônicos e decorações.",
-      "imgUrl": "/assets/img/rack1.jpeg",
+      "nome": "Guarda-Roupa Casal Max Plus Espresso",
+      "preco": 1299.9,
+      "favoritos": [],
+      "categoria": "quarto",
+      "cor": [
+        "Branco"
+      ],
+      "quantidade": 0,
+      "descricao": "Guarda-Roupa Casal 4 Espelhos 3 Portas de Correr 4 Gavetas Max Plus Espresso Móveis Branco",
+      "imgUrl": "/assets/img/quarto4.jpeg",
       "id": 28
     },
     {
-      "nome": "Rack 2",
-      "preco": 89.99,
-      "quantidade": 15,
-      "descricao": "Um rack multifuncional e versátil para ambientes de entretenimento.",
-      "imgUrl": "/assets/img/rack2.jpeg",
+      "nome": "Guarda Roupa Casal Paris 6 Portas 2 Gavetas",
+      "preco": 599.89,
+      "favoritos": [],
+      "categoria": "quarto",
+      "cor": [
+        "cinza"
+      ],
+      "quantidade": 2,
+      "descricao": "Guarda Roupa Casal Paris 6 Portas 2 Gavetas Paris Espresso Móveis Cinza",
+      "imgUrl": "/assets/img/quarto5.jpeg",
       "id": 29
     },
     {
-      "nome": "Rack 3",
-      "preco": 89.99,
-      "quantidade": 20,
-      "descricao": "Um rack elegante e resistente para salas de estar.",
-      "imgUrl": "/assets/img/rack3.jpeg",
+      "nome": "Guarda Roupa Casal com Espelho 8 Portas Nova York",
+      "preco": 599.89,
+      "favoritos": [],
+      "categoria": "quarto",
+      "cor": [
+        "Preto"
+      ],
+      "quantidade": 2,
+      "descricao": "Guarda Roupa Casal com Espelho 8 Portas Nova York Yescasa Preto",
+      "imgUrl": "/assets/img/quarto6.jpeg",
       "id": 30
     },
     {
-      "nome": "Rack 4",
-      "preco": 89.99,
-      "quantidade": 18,
-      "descricao": "Um rack compacto e moderno para ambientes contemporâneos.",
-      "imgUrl": "/assets/img/rack4.jpeg",
+      "nome": "Cama Casal/Queen com Cabeceira e Mesa de Apoio",
+      "preco": 1299,
+      "favoritos": [],
+      "categoria": "quarto",
+      "cor": [
+        "Carvalho"
+      ],
+      "quantidade": 9,
+      "descricao": "Cama Casal/Queen com Cabeceira e Mesa de Apoio Samambaia Cabecasa Madeiramadeira Carvalho",
+      "imgUrl": "/assets/img/quarto7.jpeg",
       "id": 31
     },
     {
-      "nome": "Rack 5",
-      "preco": 89.99,
-      "quantidade": 25,
-      "descricao": "Um rack espaçoso e funcional para organizar seus pertences.",
-      "imgUrl": "/assets/img/rack5.jpeg",
+      "nome": "Cama Casal Mônaco Tcil Móveis Cinamomo",
+      "preco": 299,
+      "favoritos": [],
+      "categoria": "quarto",
+      "cor": [
+        "Cinamomo"
+      ],
+      "quantidade": 10,
+      "descricao": "Cama Casal Mônaco Tcil Móveis Cinamomo",
+      "imgUrl": "/assets/img/quarto8.jpeg",
       "id": 32
     },
     {
-      "nome": "Rack 6",
-      "preco": 89.99,
-      "quantidade": 22,
-      "descricao": "Um rack versátil e elegante para espaços de entretenimento.",
-      "imgUrl": "/assets/img/rack6.jpeg",
+      "nome": "Cama Casal Madri Espresso Móveis New Canion",
+      "preco": 541,
+      "favoritos": [],
+      "categoria": "quarto",
+      "cor": [
+        "Marrom"
+      ],
+      "quantidade": 10,
+      "descricao": "Cama Casal Madri Espresso Móveis New Canion",
+      "imgUrl": "/assets/img/quarto9.jpeg",
       "id": 33
     },
     {
-      "nome": "Rack 7",
-      "preco": 89.99,
-      "quantidade": 30,
-      "descricao": "Um rack moderno e espaçoso para ambientes multifuncionais.",
-      "imgUrl": "/assets/img/rack7.jpeg",
+      "nome": "Treliche Multimóveis London Star",
+      "preco": 541,
+      "favoritos": [],
+      "categoria": "quarto",
+      "cor": [
+        "Branco"
+      ],
+      "quantidade": 10,
+      "descricao": "Treliche Multimóveis para Colchão 188x78cm Branco/Fumê",
+      "imgUrl": "/assets/img/quarto10.jpeg",
       "id": 34
     },
     {
-      "nome": "Rack 8",
-      "preco": 89.99,
-      "quantidade": 28,
-      "descricao": "Um rack minimalista e elegante para espaços contemporâneos.",
-      "imgUrl": "/assets/img/rack8.jpeg",
+      "nome": "Cama Star Plus Office Multifuncional",
+      "preco": 431.44,
+      "favoritos": [],
+      "categoria": "quarto",
+      "cor": [
+        "Cinza"
+      ],
+      "quantidade": 12,
+      "descricao": "Cama Solteiro Multifuncional 2 Gavetas Kiara Conquista Móveis Preto Fosco",
+      "imgUrl": "/assets/img/quarto11.jpeg",
       "id": 35
     },
     {
-      "nome": "Rack 9",
-      "preco": 89.99,
-      "quantidade": 16,
-      "descricao": "Um rack espaçoso e resistente para ambientes descontraídos.",
-      "imgUrl": "/assets/img/rack9.jpeg",
+      "nome": "Cama Star Paris Multifuncional",
+      "preco": 617.4,
+      "favoritos": [],
+      "categoria": "quarto",
+      "cor": [
+        "amendoa"
+      ],
+      "quantidade": 12,
+      "descricao": "Cama Articulada Horizontal Solteiro Dormitório Tecnomobili Amêndoa",
+      "imgUrl": "/assets/img/quarto12.jpeg",
       "id": 36
     },
     {
-      "nome": "Rack 10",
-      "preco": 89.99,
-      "quantidade": 32,
-      "descricao": "Um rack moderno e versátil para organizar seus objetos.",
-      "imgUrl": "/assets/img/rack10.jpeg",
+      "nome": "Mesa de escritório em L  Office NT",
+      "preco": 300.4,
+      "favoritos": [],
+      "categoria": "escritorio",
+      "cor": [
+        "branco"
+      ],
+      "quantidade": 1,
+      "descricao": "Mesa de Escritório em L 2 Gavetas 3 Nichos Office NT 2060 Notável Móveis Branco New",
+      "imgUrl": "/assets/img/escritorio1.jpeg",
       "id": 37
     },
     {
-      "nome": "Rack 11",
-      "preco": 89.99,
-      "quantidade": 26,
-      "descricao": "Um rack elegante e funcional para ambientes acolhedores.",
-      "imgUrl": "/assets/img/rack11.jpeg",
+      "nome": "Escrivaninha Minimalista Artany Freijó",
+      "preco": 300.4,
+      "favoritos": [],
+      "categoria": "escritorio",
+      "cor": [
+        "marrom"
+      ],
+      "quantidade": 1,
+      "descricao": "Escrivaninha Minimalista 90cm com 2 Nichos Artany Freijó",
+      "imgUrl": "/assets/img/escritorio2.jpeg",
       "id": 38
     },
     {
-      "nome": "Sofá 1",
-      "preco": 399.99,
-      "quantidade": 5,
-      "descricao": "Um sofá espaçoso e confortável para salas de estar.",
-      "imgUrl": "/assets/img/sofa1.jpeg",
+      "nome": "Escrivaninha com estante Match Artely",
+      "preco": 237.4,
+      "favoritos": [],
+      "categoria": "escritorio",
+      "cor": [
+        "preto",
+        "marrom"
+      ],
+      "quantidade": 0,
+      "descricao": "Escrivaninha com Estante 5 Prateleiras 120cm Match Artely Pinho/Preto",
+      "imgUrl": "/assets/img/escritorio3.jpeg",
       "id": 39
+    },
+    {
+      "nome": "Cadeira de Escritório Presidente Fox",
+      "preco": 437.4,
+      "favoritos": [],
+      "categoria": "escritorio",
+      "cor": [
+        "preto"
+      ],
+      "quantidade": 0,
+      "descricao": "Cadeira de Escritório Presidente Fox Office 300 Preta Preto",
+      "imgUrl": "/assets/img/escritorio4.jpeg",
+      "id": 40
+    },
+    {
+      "nome": "Cadeira Giratória Day Presidente",
+      "preco": 437.4,
+      "favoritos": [],
+      "categoria": "escritorio",
+      "cor": [
+        "preto"
+      ],
+      "quantidade": 4,
+      "descricao": "Cadeira Escritório Giratória Day Presidente Marrom CompreAlegre 100% Nacional",
+      "imgUrl": "/assets/img/escritorio5.jpeg",
+      "id": 41
+    },
+    {
+      "nome": "Cadeira Gamer Fox Racer Rgb (Led)",
+      "preco": 737.4,
+      "favoritos": [],
+      "categoria": "escritorio",
+      "cor": [
+        "preto"
+      ],
+      "quantidade": 4,
+      "descricao": "Cadeira Gamer Fox Racer Preta com Iluminacão Rgb (Led) Preto",
+      "imgUrl": "/assets/img/escritorio6.jpeg",
+      "id": 42
+    },
+    {
+      "nome": "Cadeira Gamer - Prizi - JX-1039Y",
+      "preco": 737.4,
+      "favoritos": [],
+      "categoria": "escritorio",
+      "cor": [
+        "amarelo",
+        "preto"
+      ],
+      "quantidade": 2,
+      "descricao": "Cadeira Gamer Amarela - Prizi - JX-1039Y Amarelo",
+      "imgUrl": "/assets/img/escritorio7.jpeg",
+      "id": 43
+    },
+    {
+      "nome": "Cadeira Gamer Mx1 Giratória Gold",
+      "preco": 495.4,
+      "favoritos": [],
+      "categoria": "escritorio",
+      "cor": [
+        "amarelo",
+        "preto"
+      ],
+      "quantidade": 2,
+      "descricao": "Cadeira Gamer Mx1 Giratória Preto Preto",
+      "imgUrl": "/assets/img/escritorio8.jpeg",
+      "id": 44
+    },
+    {
+      "nome": "Cadeira Office Eiffel Slim Giratória",
+      "preco": 252.4,
+      "favoritos": [],
+      "categoria": "escritorio",
+      "cor": [
+        "branco"
+      ],
+      "quantidade": 2,
+      "descricao": "Cadeira Office Eiffel Slim Base Giratória Branco",
+      "imgUrl": "/assets/img/escritorio9.jpeg",
+      "id": 45
+    },
+    {
+      "nome": "Cadeira para Escritório Estofada",
+      "preco": 599,
+      "favoritos": [],
+      "categoria": "escritorio",
+      "cor": [
+        "Rosa"
+      ],
+      "quantidade": 2,
+      "descricao": "Cadeira para Escritório Estofada Poltrona Decorativa Juliana Rosa",
+      "imgUrl": "/assets/img/escritorio10.jpeg",
+      "id": 46
+    },
+    {
+      "nome": "Poltrona Escritório Eduarda com Regulagem",
+      "preco": 1250,
+      "favoritos": [],
+      "categoria": "escritorio",
+      "cor": [
+        "chocolate"
+      ],
+      "quantidade": 2,
+      "descricao": "Poltrona Escritório Eduarda com Regulagem de Altura - Poltronas Do Sul Chocolate",
+      "imgUrl": "/assets/img/escritorio11.jpeg",
+      "id": 47
+    },
+    {
+      "nome": "Gabinete Suspenso para Banheiro Golden",
+      "preco": 519,
+      "favoritos": [],
+      "categoria": "banheiro",
+      "cor": [
+        "Preto",
+        "grafite"
+      ],
+      "quantidade": 3,
+      "descricao": "Gabinete Suspenso para Banheiro 80cm com Cuba Placa e Ponto Preto/Grafite",
+      "imgUrl": "/assets/img/banheiro1.jpeg",
+      "id": 48
+    },
+    {
+      "nome": "Gabinete de Coluna Pequin Bechara",
+      "preco": 159,
+      "favoritos": [],
+      "categoria": "banheiro",
+      "cor": [
+        "Branco"
+      ],
+      "quantidade": 0,
+      "descricao": "Gabinete de Coluna 1 Porta Pequin Móveis Bechara Branco",
+      "imgUrl": "/assets/img/banheiro2.jpeg",
+      "id": 49
+    },
+    {
+      "nome": "Gabinete Suspenso Tecno Mobili Mármore",
+      "preco": 159,
+      "favoritos": [],
+      "categoria": "banheiro",
+      "cor": [
+        "Branco",
+        "marmorizado"
+      ],
+      "quantidade": 0,
+      "descricao": "Gabinete Suspenso para Banheiro 60cm Porta Basculante Tecno Mobili Mármore Branco",
+      "imgUrl": "/assets/img/banheiro3.jpeg",
+      "id": 50
+    },
+    {
+      "nome": "Gabinete Banheiro Joia 60cm",
+      "preco": 269.8,
+      "favoritos": [],
+      "categoria": "banheiro",
+      "cor": [
+        "Branco",
+        "preto"
+      ],
+      "quantidade": 7,
+      "descricao": "Gabinete Banheiro Joia 60cm com 3 Gavetas e Rodinha Preto/Branco",
+      "imgUrl": "/assets/img/banheiro4.jpeg",
+      "id": 51
+    },
+    {
+      "nome": "Gabinete Espelheira Baden Bechara",
+      "preco": 334.9,
+      "favoritos": [],
+      "categoria": "banheiro",
+      "cor": [
+        "preto"
+      ],
+      "quantidade": 8,
+      "descricao": "Gabinete para Banheiro com Cuba e Espelheira Baden Móveis Bechara Preto Fosco/Ripado",
+      "imgUrl": "/assets/img/banheiro5.jpeg",
+      "id": 52
+    },
+    {
+      "nome": "Gabinete Armário Banheiro Multimóveis ",
+      "preco": 189.9,
+      "favoritos": [],
+      "categoria": "banheiro",
+      "cor": [
+        "preto"
+      ],
+      "quantidade": 3,
+      "descricao": "Gabinete Armário Banheiro 60cm com Rodízios Multimóveis Preto Preto",
+      "imgUrl": "/assets/img/banheiro6.jpeg",
+      "id": 53
+    },
+    {
+      "nome": "Espelheira para Banheiro Malbec Bosi ",
+      "preco": 189.9,
+      "favoritos": [],
+      "categoria": "banheiro",
+      "cor": [
+        "branco"
+      ],
+      "quantidade": 3,
+      "descricao": "Espelheira para Banheiro 2 Portas 2 Prateleiras Malbec Móveis Bosi Branco",
+      "imgUrl": "/assets/img/banheiro7.jpeg",
+      "id": 54
+    },
+    {
+      "nome": "Espelheira para Banheiro Treviso Mgm",
+      "preco": 259.9,
+      "favoritos": [],
+      "categoria": "banheiro",
+      "cor": [
+        "branco"
+      ],
+      "quantidade": 2,
+      "descricao": "Espelheira para Banheiro 1 Porta 3 Prateleiras Treviso Mgm Móveis Branco",
+      "imgUrl": "/assets/img/banheiro8.jpeg",
+      "id": 55
+    },
+    {
+      "nome": "Espelheira para Banheiro Concept CabeCasa",
+      "preco": 428.9,
+      "favoritos": [],
+      "categoria": "banheiro",
+      "cor": [
+        "preto"
+      ],
+      "quantidade": 2,
+      "descricao": "Espelheira para Banheiro Concept CabeCasa MadeiraMadeira Acácia/Preto Trama",
+      "imgUrl": "/assets/img/banheiro9.jpeg",
+      "id": 56
+    },
+    {
+      "nome": "Armário Para Banheiro Versato ",
+      "preco": 159.9,
+      "favoritos": [],
+      "categoria": "banheiro",
+      "cor": [
+        "branco",
+        "mel"
+      ],
+      "quantidade": 2,
+      "descricao": "Armário Para Banheiro com 1 Porta LVA06 Versato Nova Móbile Mel/Branco",
+      "imgUrl": "/assets/img/banheiro10.jpeg",
+      "id": 57
+    },
+    {
+      "nome": "Lavatório em Porcelanato Blu Trufa",
+      "preco": 997.9,
+      "favoritos": [],
+      "categoria": "banheiro",
+      "cor": [
+        "Marrom"
+      ],
+      "quantidade": 5,
+      "descricao": "Lavatório em Porcelanato para Banheiro 80cm com Cuba Esculpida Blu Trufa",
+      "imgUrl": "/assets/img/banheiro11.jpeg",
+      "id": 58
+    },
+    {
+      "nome": "Bancada em Porcelanato Max",
+      "preco": 1267.9,
+      "favoritos": [],
+      "categoria": "banheiro",
+      "cor": [
+        "preto"
+      ],
+      "quantidade": 1,
+      "descricao": "Bancada em Porcelanato para Banheiro 80cm Max com Cuba Esculpida Blu Black",
+      "imgUrl": "/assets/img/banheiro12.jpeg",
+      "id": 59
+    },
+    {
+      "nome": "Bancada em Porcelanato Max Calacata",
+      "preco": 1206.9,
+      "favoritos": [],
+      "categoria": "banheiro",
+      "cor": [
+        "branco"
+      ],
+      "quantidade": 1,
+      "descricao": "Bancada em Porcelanato 80cm com Cuba Esculpida Max Blu Lavatórios Calacata",
+      "imgUrl": "/assets/img/banheiro13.jpeg",
+      "id": 60
+    },
+    {
+      "nome": "Cozinha Modulada 9 Peças CabeCasa",
+      "preco": 6250.9,
+      "favoritos": [],
+      "categoria": "cozinha",
+      "cor": [
+        "Cinza"
+      ],
+      "quantidade": 1,
+      "descricao": "Cozinha Modulada 9 Peças sem Tampo 4 Aéreos 4 Balcões e Torre Quente Arizona CabeCasa MadeiraMadeira Branco/Cinza",
+      "imgUrl": "/assets/img/cozinha1.jpeg",
+      "id": 61
+    },
+    {
+      "nome": "Cozinha Modulada Compacta CabeCasa",
+      "preco": 3446.9,
+      "favoritos": [],
+      "categoria": "cozinha",
+      "cor": [
+        "Azul"
+      ],
+      "quantidade": 1,
+      "descricao": "Cozinha Modulada Compacta 4 Peças com Armário Aéreo 2 Portas Vidro Arizona CabeCasa MadeiraMadeira Branco",
+      "imgUrl": "/assets/img/cozinha2.jpeg",
+      "id": 62
+    },
+    {
+      "nome": "Cozinha Modulada Arizona CabeCasa",
+      "preco": 2967.9,
+      "favoritos": [],
+      "categoria": "cozinha",
+      "cor": [
+        "menta"
+      ],
+      "quantidade": 1,
+      "descricao": "Cozinha Modulada 4 Peças Arizona CabeCasa MadeiraMadeira Verde Menta",
+      "imgUrl": "/assets/img/cozinha3.jpeg",
+      "id": 63
+    },
+    {
+      "nome": "Cozinha modulada 4pças Kalli CabeCasa",
+      "preco": 2617.9,
+      "favoritos": [],
+      "categoria": "cozinha",
+      "cor": [
+        "branco",
+        "cinza"
+      ],
+      "quantidade": 2,
+      "descricao": "Cozinha Modulada 4 Peças com 3 Aéreos e Balcão 120cm Arizona CabeCasa MadeiraMadeira Branco/Cinza",
+      "imgUrl": "/assets/img/cozinha4.jpeg",
+      "id": 64
+    },
+    {
+      "nome": "Balcão de Canto Oblíquo Arizona",
+      "preco": 867.9,
+      "favoritos": [],
+      "categoria": "cozinha",
+      "cor": [
+        "branco",
+        "azul"
+      ],
+      "quantidade": 2,
+      "descricao": "Balcão de Canto Oblíquo Arizona CabeCasa MadeiraMadeira Branco/Cinza",
+      "imgUrl": "/assets/img/cozinha5.jpeg",
+      "id": 65
+    },
+    {
+      "nome": "Cozinha Modulada Max Golden CabeCasa",
+      "preco": 4637.9,
+      "favoritos": [],
+      "categoria": "cozinha",
+      "cor": [
+        "branco",
+        "azul"
+      ],
+      "quantidade": 2,
+      "descricao": "Cozinha Modulada 6 Peças com Tampo 3 Aéreos e 3 Balcões Arizona CabeCasa MadeiraMadeira Branco/Cinza Claro",
+      "imgUrl": "/assets/img/cozinha6.jpeg",
+      "id": 66
+    },
+    {
+      "nome": "Cooktop Indução 4 Bocas Fischer",
+      "preco": 2499.9,
+      "favoritos": [],
+      "categoria": "cozinha",
+      "cor": [
+        "preto"
+      ],
+      "quantidade": 2,
+      "descricao": "Cooktop Indução 4 Bocas Mesa Vitrocerâmica 220V Fischer Preto",
+      "imgUrl": "/assets/img/cozinha7.jpeg",
+      "id": 67
+    },
+    {
+      "nome": "Cooktop Itatiaia Essencial 4 Bocas",
+      "preco": 2499.9,
+      "favoritos": [],
+      "categoria": "cozinha",
+      "cor": [
+        "preto"
+      ],
+      "quantidade": 5,
+      "descricao": "Cooktop Itatiaia Essencial 4 Bocas Vidro Preto Bivolt 3700000192",
+      "imgUrl": "/assets/img/cozinha8.jpeg",
+      "id": 68
+    },
+    {
+      "nome": "Cooktop 5 Bocas à Gás Platinium",
+      "preco": 1559,
+      "favoritos": [],
+      "categoria": "cozinha",
+      "cor": [
+        "preto"
+      ],
+      "quantidade": 2,
+      "descricao": "Cooktop 5 Bocas à Gás Automático Platinium Bivolt Fischer Preto",
+      "imgUrl": "/assets/img/cozinha9.jpeg",
+      "id": 69
+    },
+    {
+      "nome": "Cooktop Indução Philco 5 Bocas",
+      "preco": 1659,
+      "favoritos": [],
+      "categoria": "cozinha",
+      "cor": [
+        "preto"
+      ],
+      "quantidade": 9,
+      "descricao": "Cooktop Indução Philco PCT05VC Volcano 5 Bocas 8400W 220V",
+      "imgUrl": "/assets/img/cozinha10.jpeg",
+      "id": 70
     }
   ]
 }

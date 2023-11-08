@@ -3,49 +3,41 @@ import {
   Container,
   ContainerInferior,
   ContainerInfos,
+  ContainerInfosSociais,
   ContainerSociais,
   ContainerSuperior,
   FooterTag,
   PTagContact,
-  PTagSiteMap,
   TitleInfos,
 } from './styled';
+import Logo from '../../assets/img/logo.png';
+import IconFacebook from '../../assets/img/facebook.png';
+import IconTwitter from '../../assets/img/twitter.png';
+import IconInstagram from '../../assets/img/instagram.png';
 
 const Footer = () => {
   return (
     <FooterTag>
       <Container>
         <ContainerSuperior>
-          <p>Imagem Logo</p>
+          <img src={Logo} alt="Logo empresa Serra Decor" />
           <ContainerInfos>
-            <TitleInfos>Title</TitleInfos>
-            <PTagSiteMap>Infos</PTagSiteMap>
-            <PTagSiteMap>Infos</PTagSiteMap>
-            <PTagSiteMap>Infos</PTagSiteMap>
-            <PTagSiteMap>Infos</PTagSiteMap>
-            <PTagSiteMap>Infos</PTagSiteMap>
+            <TitleInfos>Contato</TitleInfos>
+            <PTagContact>(22) 99104-4962</PTagContact>
+            <PTagContact>serradecor@gmail.com</PTagContact>
+            <PTagContact>Avenida Vieira Souto - 136 - RJ</PTagContact>
           </ContainerInfos>
-          <ContainerInfos>
-            <TitleInfos>Title</TitleInfos>
-            <PTagContact>Infos</PTagContact>
-            <PTagContact>Infos</PTagContact>
-            <PTagContact>Infos</PTagContact>
-            <PTagContact>Infos</PTagContact>
-            <PTagContact>Infos</PTagContact>
-          </ContainerInfos>
-          <ContainerInfos>
-            <TitleInfos>Title</TitleInfos>
+          <ContainerInfosSociais>
+            <TitleInfos>Social</TitleInfos>
             <ContainerSociais>
-              <p>Inf</p>
-              <p>ASD</p>
-              <p>ASD</p>
-              <p>ASD</p>
-              <p>ASD</p>
+              <img src={IconFacebook} alt="" />
+              <img src={IconTwitter} alt="" />
+              <img src={IconInstagram} alt="" />
             </ContainerSociais>
-          </ContainerInfos>
+          </ContainerInfosSociais>
         </ContainerSuperior>
         <ContainerInferior>
-          <p>Copyright Direitos Reservados</p>
+          <p>©Copyright | Todos os direitos reservados</p>
         </ContainerInferior>
       </Container>
     </FooterTag>

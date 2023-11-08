@@ -1,6 +1,6 @@
 import React from 'react';
 import { GlobalStyleLogin } from '../../global/globalStyle';
-import Footer from '../../components/Footer/Footer';
+import Footer from '../../components/FooterLogin/FooterLogin';
 import {
   ButtonTag,
   ContainerLogin,
@@ -18,6 +18,8 @@ import { UserContext } from '../../context/UserContext';
 const LoginPage = () => {
   const [email, setEmail] = React.useState('');
   const [senha, setSenha] = React.useState('');
+  const [errorSenha, setErrorSenha] = React.useState(false);
+  const [errorEmail, setErrorEmail] = React.useState(false);
   const { setUserLogado } = React.useContext(UserContext);
   const navigate = useNavigate();
 
@@ -34,8 +36,16 @@ const LoginPage = () => {
             nome: response.data[0].nome,
           }),
         );
+        setErrorSenha(false);
+        setErrorEmail(false);
         navigate('/');
+      } else {
+        setErrorEmail(false);
+        setErrorSenha(true);
       }
+    } else {
+      setErrorSenha(false);
+      setErrorEmail(true);
     }
   };
 
@@ -43,7 +53,13 @@ const LoginPage = () => {
     <>
       <GlobalStyleLogin />
       <FundoImg>
-        <LogoSite src={Logo} alt="Logo do site" />
+        <LogoSite
+          onClick={() => {
+            navigate('/');
+          }}
+          src={Logo}
+          alt="Logo do site"
+        />
         <ContainerLogin>
           <TitleForm>Login</TitleForm>
           <form onSubmit={loginUser}>
@@ -61,10 +77,13 @@ const LoginPage = () => {
               onChange={({ target }) => setSenha(target.value)}
               type="password"
             />
+            {errorEmail && <NoAccountP>Usuario inexistente</NoAccountP>}
+            {errorSenha && <NoAccountP>Senha incorreta</NoAccountP>}
             <ButtonTag>Entrar</ButtonTag>
           </form>
           <NoAccountP>
-            Não tem uma conta? <span>Cadastre-se</span>
+            Não tem uma conta?{' '}
+            <span onClick={() => navigate('/register')}>Cadastre-se</span>
           </NoAccountP>
         </ContainerLogin>
       </FundoImg>

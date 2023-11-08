@@ -3,17 +3,25 @@ export const UserContext = React.createContext(0);
 
 export const UserProvider = ({ children }) => {
   const [userLogado, setUserLogado] = React.useState(null);
-  const userLocalStorageString = localStorage.getItem('userLogado');
-  const userLocalStorageObg = JSON.parse(userLocalStorageString);
+
+  const deslogar = () => {
+    localStorage.setItem('userLogado', '');
+  };
 
   React.useEffect(() => {
-    if (userLocalStorageObg) {
-      setUserLogado(userLocalStorageObg);
+    const userLocalStorageString = localStorage.getItem('userLogado');
+    if (userLocalStorageString != '') {
+      const userLocalStorageObg = JSON.parse(userLocalStorageString);
+      if (userLocalStorageObg) {
+        setUserLogado(userLocalStorageObg);
+      }
+    } else {
+      setUserLogado(null);
     }
   }, []);
 
   return (
-    <UserContext.Provider value={{ userLogado, setUserLogado }}>
+    <UserContext.Provider value={{ userLogado, setUserLogado, deslogar }}>
       {children}
     </UserContext.Provider>
   );

@@ -1,23 +1,26 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const Container = styled.div`
-  width: 60%;
+  width: 80%;
   margin: 197px auto 0 auto;
-  min-height: calc(100vh - 251px -137px );
-  
-      
+  min-height: calc(100vh - 251px -137px);
 `;
 export const ContainerProduct = styled.div`
   display: flex;
   gap: 40px;
+  display: flex;
 `;
 export const ImgProduct = styled.img`
-  width: 50%;
+  width: 35%;
+  border-radius: 20px;
+  object-fit: contain;
 `;
 export const ContainerProductInfos = styled.div`
   display: flex;
   flex-direction: column;
-  width: 50%;
+  justify-content: space-evenly;
+  width: 60%;
+  color: white;
   h2 {
     text-align: start;
     margin-bottom: 10px;
@@ -26,8 +29,9 @@ export const ContainerProductInfos = styled.div`
 export const ContainerProductDetails = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 40px 0 60px 0;
+  margin: 65px 0 60px 0;
   gap: 30px;
+  color: white;
   h3 {
     font-size: 24px;
     line-height: 28px;
@@ -35,20 +39,19 @@ export const ContainerProductDetails = styled.div`
 `;
 export const ContainerQuantity = styled.div`
   display: flex;
-  border: 1px solid #c69857;
+  border: 1px solid #6d6d6f;
   border-radius: 4px;
   width: max-content;
   height: max-content;
-  background-color: #efefef;
+  background-color: #232426;
   padding: 4px;
   input {
     border: none;
-    width: 30px;
-    outline: 0;
+    width: 40px;
     text-align: center;
-    background-color: #efefef;
+    background-color: #232426;
     font-size: 16px;
-    color: black;
+    color: #d9d9db;
     font-weight: bold;
   }
   button {
@@ -56,15 +59,15 @@ export const ContainerQuantity = styled.div`
     border-radius: 4px;
     width: 30px;
     cursor: pointer;
-    background-color: #efefef;
+    background-color: #232426;
     outline: 0;
     font-size: 20px;
     padding: 4px;
-    color: #c69857;
+    color: #d9d9db;
     font-weight: bold;
   }
   button:hover {
-    background-color: #e5e5e5;
+    background-color: #3b3b3d;
   }
 `;
 export const TagPValorDesconto = styled.p`
@@ -80,11 +83,12 @@ export const TagPValor = styled.p`
 
 export const ContainerBuy = styled.div`
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
 `;
 export const ButtonBuy = styled.button`
-  width: 60%;
+  width: 45%;
+  color: aliceblue;
   height: 41px;
   min-width: 180px;
   font-weight: bold;
@@ -93,7 +97,28 @@ export const ButtonBuy = styled.button`
   border-radius: 4px;
   cursor: pointer;
   background-color: #c69857;
+
   &:hover {
     background-color: #b1894e;
   }
+`;
+
+export const ContainerQuantityValor = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+export const ContainerTitle = styled.div``;
+export const ContainerButtonQuantity = styled.div`
+  width: 45%;
+  display: flex;
+  justify-content: center;
+`;
+
+const textExpand = keyframes`
+  0% { font-size: 0 }
+  100% { font-size: inicial }
+`;
+export const ContainerInfoAddCart = styled.div`
+  color: white;
+  animation: ${textExpand} 0.5s ease forwards;
 `;

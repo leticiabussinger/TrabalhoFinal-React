@@ -8,8 +8,6 @@ export const FundoImg = styled.div`
   justify-content: center;
   /* background-color: #292020; */
   /* height: 120vh; */
- 
-
 `;
 
 export const ContainerLogin = styled.div`
@@ -22,7 +20,6 @@ export const ContainerLogin = styled.div`
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4.7px);
   -webkit-backdrop-filter: blur(4.7px);
-
 `;
 export const ButtonTag = styled.button`
   display: flex;
@@ -45,6 +42,7 @@ export const NoAccountP = styled.p`
 
   span {
     color: blueviolet;
+    cursor: pointer;
   }
 `;
 
@@ -58,5 +56,6 @@ export const TitleForm = styled.h2`
 export const LogoSite = styled.img`
   display: flex;
   margin: 40px auto 40px auto;
+  cursor: pointer;
   width: 200px;
 `;

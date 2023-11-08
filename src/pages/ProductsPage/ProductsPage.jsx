@@ -1,8 +1,8 @@
-import React from "react";
-import Product from "../../components/Product/Product";
-import { api } from "../../api/api";
-import { Container, ContainerGrid } from "./styled";
-import { useParams } from "react-router-dom";
+import React from 'react';
+import Product from '../../components/Product/Product';
+import { api } from '../../api/api';
+import { Container, ContainerGrid } from './styled';
+import { useParams } from 'react-router-dom';
 
 const ProductsPage = () => {
   const [json, SetJson] = React.useState(null);
@@ -11,7 +11,6 @@ const ProductsPage = () => {
   const getProdutosCategoria = async () => {
     const response = await api.get(`produtos?categoria=${categoria}`);
     SetJson(response.data);
-    console.log(json);
   };
 
   const getProdutosPesquisa = async () => {
@@ -19,15 +18,16 @@ const ProductsPage = () => {
     SetJson(response.data);
   };
 
+  React.useEffect(() => {}, [json]);
   React.useEffect(() => {
     if (
       [
-        "sala-de-estar",
-        "banheiro",
-        "sala-de-jantar",
-        "escritorio",
-        "cozinha",
-        "quarto",
+        'sala-de-estar',
+        'banheiro',
+        'sala-de-jantar',
+        'escritorio',
+        'cozinha',
+        'quarto',
       ].includes(categoria)
     ) {
       getProdutosCategoria();
@@ -40,10 +40,11 @@ const ProductsPage = () => {
   return (
     <Container>
       <ContainerGrid>
-        {json.map((p) => {
+        {console.log(json)}
+        {json.map((p, i) => {
           return (
             <>
-              <Product product={p} />
+              <Product product={p} idx={i} />
             </>
           );
         })}

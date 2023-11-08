@@ -11,28 +11,80 @@ import Logo from '../../assets/img/logo.png';
 import Input from '../../components/Input/Input';
 import { api } from '../../api/api';
 import { GlobalStyleLogin } from '../../global/globalStyle';
-import Footer from '../../components/Footer/Footer';
+import Footer from '../../components/FooterLogin/FooterLogin';
+import { useNavigate } from 'react-router-dom';
 
 const RegisterPage = () => {
   const [nome, setNome] = React.useState('');
   const [email, setEmail] = React.useState('');
   const [senha, setSenha] = React.useState('');
+  const [emailIgual, setEmailIgual] = React.useState([]);
+  const [errorGeral, setErrorGeral] = React.useState(false);
+  const [errorEmail, setErrorEmail] = React.useState(false);
+  const navigate = useNavigate();
 
   const addUser = (e) => {
     e.preventDefault();
-    api.post('/usuarios', {
-      nome,
-      email,
-      senha,
-      carinho: [],
-    });
+    getUserPorEmail();
+    if (emailIgual.length == 0) {
+      if (nome != '' && email != '' && senha != '') {
+        setEmailIgual([]);
+        api.post('/usuarios', {
+          nome,
+          email,
+          senha,
+          carinho: [],
+        });
+        setErrorGeral(false);
+        setErrorEmail(false);
+      } else {
+        setErrorGeral(true);
+        setErrorEmail(false);
+      }
+    } else {
+      setErrorGeral(false);
+      setErrorEmail(true);
+    }
   };
+
+  const getUserPorEmail = async () => {
+    const response = await api.get(`usuarios?email=${email}`);
+    setEmailIgual(response.data);
+  };
+
+  React.useEffect(() => {
+    if (emailIgual.length == 0) {
+      if (nome != '' && email != '' && senha != '') {
+        setEmailIgual([]);
+        api.post('/usuarios', {
+          nome,
+          email,
+          senha,
+          carinho: [],
+        });
+        setErrorGeral(false);
+        setErrorEmail(false);
+      } else {
+        setErrorGeral(true);
+        setErrorEmail(false);
+      }
+    } else {
+      setErrorGeral(false);
+      setErrorEmail(true);
+    }
+  }, [emailIgual]);
 
   return (
     <>
       <GlobalStyleLogin />
       <FundoImg>
-        <LogoSite src={Logo} alt="Logo do site" />
+        <LogoSite
+          onClick={() => {
+            navigate('/');
+          }}
+          src={Logo}
+          alt="Logo do site"
+        />
         <ContainerLogin>
           <TitleForm>Registre-se</TitleForm>
           <form onSubmit={addUser}>
@@ -56,10 +108,19 @@ const RegisterPage = () => {
               onChange={({ target }) => setSenha(target.value)}
               type="password"
             />
-            <ButtonTag>Entrar</ButtonTag>
+            {errorGeral && (
+              <NoAccountP>Preencha todos os campos corretamente.</NoAccountP>
+            )}
+            {errorEmail && (
+              <NoAccountP>
+                Erro, usuario ja existente com esse email.
+              </NoAccountP>
+            )}
+            <ButtonTag>Registrar</ButtonTag>
           </form>
           <NoAccountP>
-            Já possui uma conta? <span>Faça o login!</span>
+            Já possui uma conta?{' '}
+            <span onClick={() => navigate('/login')}>Faça o login!</span>
           </NoAccountP>
         </ContainerLogin>
       </FundoImg>

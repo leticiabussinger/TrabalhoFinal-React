@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   ContainerProductInfos,
   ContainerProduct,
@@ -8,11 +8,25 @@ import {
   ContainerBuy,
   TagPValorDesconto,
   TagPValorParcelado,
-} from "./styled";
+  Delete,
+} from './styled';
+import { CartContext } from '../../context/CartContext';
+import { UserContext } from '../../context/UserContext';
+import { api } from '../../api/api';
+import iconExcluir from '../../assets/img/excluir.png';
 
-const CartProduct = ({ product }) => {
-  const { nome, imgUrl, quantidade, preco } = product;
-  const [quantity, setQuantity] = React.useState(1);
+const CartProduct = ({ product, qnt }) => {
+  const { nome, imgUrl, quantidade, preco, id } = product;
+  const [quantity, setQuantity] = React.useState(qnt.quantidade);
+  const { cartItensContext } = React.useContext(CartContext);
+  const { userLogado } = React.useContext(UserContext);
+
+  const excluirItemCart = () => {
+    const newCartRemove = cartItensContext.filter((i) => i.id != id);
+    api.patch(`/usuarios/${userLogado.id}`, {
+      carrinho: [...newCartRemove],
+    });
+  };
 
   return (
     <ContainerProduct>
@@ -23,33 +37,7 @@ const CartProduct = ({ product }) => {
           <p>Vendido e entregue por SerraDecor</p>
           <ContainerBuy>
             <ContainerQuantity>
-              <button
-                onClick={() =>
-                  setQuantity((q) => {
-                    if (q > 1) {
-                      return q - 1;
-                    } else {
-                      return q;
-                    }
-                  })
-                }
-              >
-                -
-              </button>
-              <input type="number" value={quantity} disabled />
-              <button
-                onClick={() =>
-                  setQuantity((q) => {
-                    if (q < quantidade) {
-                      return q + 1;
-                    } else {
-                      return q;
-                    }
-                  })
-                }
-              >
-                +
-              </button>
+              <p>Qtd: {quantity}</p>
             </ContainerQuantity>
           </ContainerBuy>
         </div>
@@ -61,9 +49,9 @@ const CartProduct = ({ product }) => {
           </TagPValorParcelado>
         </div>
       </ContainerProductInfos>
-      <button>
-        <img src="" alt="" />
-      </button>
+      <Delete onClick={excluirItemCart}>
+        <img src={iconExcluir} alt="icone de exclusão" />
+      </Delete>
     </ContainerProduct>
   );
 };

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ContainerProduct = styled.div`
   display: flex;
@@ -6,7 +6,6 @@ export const ContainerProduct = styled.div`
   gap: 40px;
   height: max-content;
   padding: 1%;
-  
 `;
 export const ImgProduct = styled.img`
   width: 140px;
@@ -23,6 +22,7 @@ export const ContainerProductInfos = styled.div`
     margin-bottom: 10px;
   }
 `;
+
 export const ContainerProductDetails = styled.div`
   display: flex;
   flex-direction: column;
@@ -42,19 +42,17 @@ export const ContainerQuantity = styled.div`
   background-color: #232426;
   padding: 4px;
   input {
-     border: none;
+    border: none;
     width: 40px;
     text-align: end;
     background-color: #232426;
     font-size: 16px;
     color: #d9d9db;
     font-weight: bold;
-    
-    
   }
   button {
     border: none;
-    border-radius:  4px;
+    border-radius: 4px;
     width: 30px;
     cursor: pointer;
     background-color: #232426;
@@ -86,4 +84,23 @@ export const TagPValorParcelado = styled.p`
 
 export const ContainerBuy = styled.div`
   margin-top: 20px;
+`;
+
+export const Delete = styled.button`
+  width: 6%;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  img {
+    color: #3b3b3d;
+    width: 24px;
+    height: 24px;
+  }
+
+  img:hover {
+    width: 26px;
+    height: 26px;
+  }
 `;
