@@ -8,9 +8,13 @@ export const CartProvider = ({ children }) => {
     [],
   );
   const [cartValue, setCartValue] = React.useState(0);
+  const [deletedItem, setDeletedItem] = React.useState(false);
 
   const sCIC = (x) => {
     setCartItensContext(x);
+  };
+  const renderWhenDeleted = () => {
+    setDeletedItem((dI) => !dI);
   };
 
   const setUnique = () => {
@@ -30,16 +34,30 @@ export const CartProvider = ({ children }) => {
   }, [cartItensContext]);
 
   React.useEffect(() => {
-    if (cartItensContextUnique != null)
-      cartItensContextUnique.map((i) => {
-        api.get(`/produtos/${i.id}`).then((r) => {
-          setCartValue((v) => v + r.data.preco * i.quantidade);
+    if (cartItensContextUnique != null && cartItensContextUnique.length > 0) {
+      const promises = cartItensContextUnique.map(async (i) => {
+        return api.get(`/produtos/${i.id}`).then((r) => {
+          return r.data.preco * i.quantidade;
         });
       });
+
+      Promise.all(promises).then((results) => {
+        const total = results.reduce((acc, current) => acc + current, 0);
+        setCartValue(total);
+      });
+    }
   }, [cartItensContextUnique]);
 
   return (
-    <CartContext.Provider value={{ cartItensContext, sCIC, cartValue }}>
+    <CartContext.Provider
+      value={{
+        cartItensContext,
+        sCIC,
+        cartValue,
+        renderWhenDeleted,
+        deletedItem,
+      }}
+    >
       {children}
     </CartContext.Provider>
   );

@@ -18,17 +18,16 @@ const RegisterPage = () => {
   const [nome, setNome] = React.useState('');
   const [email, setEmail] = React.useState('');
   const [senha, setSenha] = React.useState('');
-  const [emailIgual, setEmailIgual] = React.useState([]);
   const [errorGeral, setErrorGeral] = React.useState(false);
   const [errorEmail, setErrorEmail] = React.useState(false);
   const navigate = useNavigate();
 
-  const addUser = (e) => {
+  const addUser = async (e) => {
     e.preventDefault();
-    getUserPorEmail();
-    if (emailIgual.length == 0) {
+    const response = await getUserPorEmail();
+
+    if (response.length == 0) {
       if (nome != '' && email != '' && senha != '') {
-        setEmailIgual([]);
         api.post('/usuarios', {
           nome,
           email,
@@ -37,6 +36,9 @@ const RegisterPage = () => {
         });
         setErrorGeral(false);
         setErrorEmail(false);
+        setTimeout(() => {
+          navigate('/login');
+        }, 1000);
       } else {
         setErrorGeral(true);
         setErrorEmail(false);
@@ -49,30 +51,8 @@ const RegisterPage = () => {
 
   const getUserPorEmail = async () => {
     const response = await api.get(`usuarios?email=${email}`);
-    setEmailIgual(response.data);
+    return response.data;
   };
-
-  React.useEffect(() => {
-    if (emailIgual.length == 0) {
-      if (nome != '' && email != '' && senha != '') {
-        setEmailIgual([]);
-        api.post('/usuarios', {
-          nome,
-          email,
-          senha,
-          carinho: [],
-        });
-        setErrorGeral(false);
-        setErrorEmail(false);
-      } else {
-        setErrorGeral(true);
-        setErrorEmail(false);
-      }
-    } else {
-      setErrorGeral(false);
-      setErrorEmail(true);
-    }
-  }, [emailIgual]);
 
   return (
     <>

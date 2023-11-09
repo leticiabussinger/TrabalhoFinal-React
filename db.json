@@ -9,45 +9,17 @@
     },
     {
       "nome": "Bernardo",
-      "email": "bernardo@gmail.com",
-      "senha": "bernardo",
+      "email": "email2@teste.com",
+      "senha": "true",
       "carinho": [],
       "id": 2
     },
     {
-      "nome": "Danilo",
-      "email": "danilo@gmail.com",
-      "senha": "senhadanilo",
+      "nome": "Leticia",
+      "email": "email3@teste.com",
+      "senha": "truefalse",
       "carinho": [],
       "id": 3
-    },
-    {
-      "nome": "Danilo",
-      "email": "danilo@gmail.com",
-      "senha": "senhadanilo",
-      "carinho": [],
-      "id": 4
-    },
-    {
-      "nome": "Danilo",
-      "email": "danilo@gmail.com",
-      "senha": "senhadanilo",
-      "carinho": [],
-      "id": 5
-    },
-    {
-      "nome": "Danilo",
-      "email": "danilo@gmail.com",
-      "senha": "senhadanilo",
-      "carinho": [],
-      "id": 6
-    },
-    {
-      "nome": "Danilo",
-      "email": "danilo@gmail.com",
-      "senha": "senhadanilo",
-      "carinho": [],
-      "id": 7
     }
   ],
   "pedidos": [
@@ -171,6 +143,94 @@
       "valorTotal": 11974.9,
       "idUser": 1,
       "id": 2
+    },
+    {
+      "itens": [
+        {
+          "nome": "Guarda Roupa Casal Portugal Espresso",
+          "preco": 1735,
+          "favoritos": [],
+          "categoria": "quarto",
+          "cor": [
+            "Branco"
+          ],
+          "quantidade": 5,
+          "descricao": "Guarda Roupa Casal 6 Portas 8 Gavetas Portugal Espresso Móveis Cinamomo/Off-White",
+          "imgUrl": "/assets/img/quarto2.jpeg",
+          "id": 26
+        },
+        {
+          "nome": "Conjunto de Sala de jantar Paris Plus - 8 cadeiras",
+          "preco": 2999.91,
+          "favoritos": [],
+          "categoria": "sala-de-jantar",
+          "cor": [
+            "preto",
+            "madeira natural"
+          ],
+          "quantidade": 9,
+          "descricao": "Conjunto de Sala de jantar com mesa em tampo de vidro com 8 cadeiras e madeira maciça",
+          "imgUrl": "/assets/img/jantar2.jpeg",
+          "id": 2
+        },
+        {
+          "nome": "Mesa de jantar Alvorada com canto reto - 6 cadeiras",
+          "preco": 1579.9,
+          "favoritos": [],
+          "categoria": "sala-de-jantar",
+          "cor": [
+            "branco",
+            "madeira natural"
+          ],
+          "quantidade": 11,
+          "descricao": "Conjunto de Sala de jantar com mesa Tp MDF tampo de vidro e canto reto acompanhando 6 cadeiras",
+          "imgUrl": "/assets/img/jantar6.jpeg",
+          "id": 6
+        },
+        {
+          "nome": "Sofá Tiê 3 Lugares 218cm",
+          "preco": 2609,
+          "favoritos": [],
+          "categoria": "sala-de-estar",
+          "cor": [
+            "cinza"
+          ],
+          "quantidade": 4,
+          "descricao": "Sofá Tiê 3 Lugares 218cm em Linho CabeCasa MadeiraMadeira Cinza",
+          "imgUrl": "/assets/img/estar2.jpeg",
+          "id": 14
+        },
+        {
+          "nome": "Cozinha Modulada 9 Peças CabeCasa",
+          "preco": 6250.9,
+          "favoritos": [],
+          "categoria": "cozinha",
+          "cor": [
+            "Cinza"
+          ],
+          "quantidade": 1,
+          "descricao": "Cozinha Modulada 9 Peças sem Tampo 4 Aéreos 4 Balcões e Torre Quente Arizona CabeCasa MadeiraMadeira Branco/Cinza",
+          "imgUrl": "/assets/img/cozinha1.jpeg",
+          "id": 61
+        },
+        {
+          "nome": "Gabinete Suspenso para Banheiro Golden",
+          "preco": 519,
+          "favoritos": [],
+          "categoria": "banheiro",
+          "cor": [
+            "Preto",
+            "grafite"
+          ],
+          "quantidade": 3,
+          "descricao": "Gabinete Suspenso para Banheiro 80cm com Cuba Placa e Ponto Preto/Grafite",
+          "imgUrl": "/assets/img/banheiro1.jpeg",
+          "id": 48
+        }
+      ],
+      "valorTotal": 16731.71,
+      "idUser": 1,
+      "id": 3
     }
   ],
   "produtos": [

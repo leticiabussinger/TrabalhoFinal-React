@@ -16,16 +16,27 @@ import { api } from '../../api/api';
 import iconExcluir from '../../assets/img/excluir.png';
 
 const CartProduct = ({ product, qnt }) => {
-  const { nome, imgUrl, quantidade, preco, id } = product;
-  const [quantity, setQuantity] = React.useState(qnt.quantidade);
-  const { cartItensContext } = React.useContext(CartContext);
+  const { nome, imgUrl, preco, id } = product;
+  const [quantity, setQuantity] = React.useState(0);
+  const { cartItensContext, renderWhenDeleted } = React.useContext(CartContext);
   const { userLogado } = React.useContext(UserContext);
+
+  React.useEffect(() => {
+    if (qnt) setQuantity(qnt.quantidade);
+  });
 
   const excluirItemCart = () => {
     const newCartRemove = cartItensContext.filter((i) => i.id != id);
-    api.patch(`/usuarios/${userLogado.id}`, {
-      carrinho: [...newCartRemove],
-    });
+    api
+      .patch(`/usuarios/${userLogado.id}`, {
+        carrinho: [...newCartRemove],
+      })
+      .then(() => {
+        renderWhenDeleted();
+      })
+      .catch((error) => {
+        console.error('Erro ao excluir o item do carrinho:', error);
+      });
   };
 
   return (

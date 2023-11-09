@@ -20,9 +20,8 @@ const CartPage = () => {
   const [cartItensIds, setCartItensIds] = React.useState(null);
   const [cartItens, setCartItens] = React.useState([]);
   const [cartItensRender, setCartItensRender] = React.useState([]);
-  const [a, setA] = React.useState(false);
   const { userLogado } = React.useContext(UserContext);
-  const { sCIC, cartValue } = React.useContext(CartContext);
+  const { sCIC, cartValue, deletedItem } = React.useContext(CartContext);
   const navigate = useNavigate();
 
   const setItensInCartFunction = () => {
@@ -72,7 +71,7 @@ const CartPage = () => {
         })
         .catch((e) => alert(e));
     }
-  }, [userLogado]);
+  }, [userLogado, deletedItem]);
 
   React.useEffect(() => {
     setItensInCartFunction();
@@ -81,10 +80,6 @@ const CartPage = () => {
   React.useEffect(() => {
     setItensInCartRenderFunction();
   }, [cartItens]);
-
-  React.useEffect(() => {
-    console.log(cartItensIds);
-  }, [a]);
 
   if (cartItens == null) return <Container />;
   return (
