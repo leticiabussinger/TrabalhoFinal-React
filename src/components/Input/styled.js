@@ -32,6 +32,8 @@ export const InputStyled = styled.input`
   border-width: 3px;
   border-radius: 4px;
   background-color: #dcdcdc;
+  color: black;
+  font-weight: 800;
   border-color: ${(props) =>
     props.colorerro == 'true' ? '#C93333' : 'transparent'};
 `;

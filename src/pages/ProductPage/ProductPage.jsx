@@ -54,10 +54,11 @@ const ProductPage = () => {
         })
         .catch((e) => alert(e));
     }
-  }, []);
+  }, [userLogado]);
 
   React.useEffect(() => {
     setItemInCartFunction();
+    console.log(userCarrinho);
   }, [userCarrinho]);
 
   const addToCart = () => {

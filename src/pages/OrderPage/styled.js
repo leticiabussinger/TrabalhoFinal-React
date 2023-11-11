@@ -7,12 +7,15 @@ export const Container = styled.div`
   color: aliceblue;
   padding-top: 6%;
   width: 80%;
-  margin: 137px auto 0 auto;
+  margin: 100px auto 0 auto;
   min-height: calc(100vh - 251px - 137px);
 `;
 export const CartProductTitle = styled.div`
-  padding-bottom: 6%;
-  h1 {
+   display: flex;
+    border-radius: 2px;
+    padding-left: 2%;
+    padding-bottom: 1%;
+  h1{
     font-weight: 500;
   }
 `;
@@ -22,13 +25,18 @@ export const Linha = styled.hr`
 `;
 
 export const Product = styled.div`
-  width: 60%;
+  width: 100%;
   height: auto;
   padding-bottom: 2%;
   border: 2px solid #6d6d6f;
   border-radius: 6px;
   padding: 20px;
   margin-bottom: 2%;
+  margin-top: 2%;
+
+  h1{
+    font-size: 26px;
+  }
 `;
 export const ContainerFinishBuy = styled.div`
   display: flex;
@@ -51,3 +59,6 @@ export const Total = styled.div`
   display: flex;
   justify-content: end;
 `;
+
+
+

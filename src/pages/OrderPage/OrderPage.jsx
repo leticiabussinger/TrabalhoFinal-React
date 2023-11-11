@@ -3,10 +3,7 @@ import React from 'react';
 import {
   CartProductTitle,
   Container,
-  Linha,
-  OrderDetail,
   Product,
-  Total,
 } from './styled';
 import { UserContext } from '../../context/UserContext';
 import OrderProduct from '../../components/OrderProduct/OrderProduct';
@@ -30,13 +27,16 @@ const OrderPage = () => {
   return (
     <Container>
       <CartProductTitle>
-        <h1>Pedidos</h1>
+        {pedidos.length > 0 ? <h1>Pedidos</h1> : <h2 style={{ textAlign: "center", width: "100%", marginTop: "50px" }}>Não há pedidos</h2>}
+
       </CartProductTitle>
       {pedidos &&
-        pedidos.map((p, i) => {
+        pedidos.map((p) => {
           return (
             <>
-              <OrderProduct product={p} idx={i} />
+              <Product>
+                <OrderProduct product={p} idx={p.id} />
+              </Product>
             </>
           );
         })}

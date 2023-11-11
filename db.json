@@ -1,238 +1,6 @@
 {
-  "usuarios": [
-    {
-      "nome": "Rhayllon",
-      "email": "email@teste.com",
-      "senha": "false",
-      "carrinho": [],
-      "id": 1
-    },
-    {
-      "nome": "Bernardo",
-      "email": "email2@teste.com",
-      "senha": "true",
-      "carinho": [],
-      "id": 2
-    },
-    {
-      "nome": "Leticia",
-      "email": "email3@teste.com",
-      "senha": "truefalse",
-      "carinho": [],
-      "id": 3
-    }
-  ],
-  "pedidos": [
-    {
-      "itens": [
-        {
-          "nome": "Sofá Tiê 3 Lugares 218cm",
-          "preco": 2609,
-          "favoritos": [],
-          "categoria": "sala-de-estar",
-          "cor": [
-            "cinza"
-          ],
-          "quantidade": 4,
-          "descricao": "Sofá Tiê 3 Lugares 218cm em Linho CabeCasa MadeiraMadeira Cinza",
-          "imgUrl": "/assets/img/estar2.jpeg",
-          "id": 14
-        },
-        {
-          "nome": "Cozinha Modulada Compacta CabeCasa",
-          "preco": 3446.9,
-          "favoritos": [],
-          "categoria": "cozinha",
-          "cor": [
-            "Azul"
-          ],
-          "quantidade": 1,
-          "descricao": "Cozinha Modulada Compacta 4 Peças com Armário Aéreo 2 Portas Vidro Arizona CabeCasa MadeiraMadeira Branco",
-          "imgUrl": "/assets/img/cozinha2.jpeg",
-          "id": 62
-        },
-        {
-          "nome": "Balcão de Canto Oblíquo Arizona",
-          "preco": 867.9,
-          "favoritos": [],
-          "categoria": "cozinha",
-          "cor": [
-            "branco",
-            "azul"
-          ],
-          "quantidade": 2,
-          "descricao": "Balcão de Canto Oblíquo Arizona CabeCasa MadeiraMadeira Branco/Cinza",
-          "imgUrl": "/assets/img/cozinha5.jpeg",
-          "id": 65
-        },
-        {
-          "nome": "Estante para Livros Star Plus Haia",
-          "preco": 870,
-          "favoritos": [],
-          "categoria": "sala-de-estar",
-          "cor": [
-            "amendoa",
-            "branco"
-          ],
-          "quantidade": 7,
-          "descricao": "Estante para Livros Haia 1,85x1,9m Yescasa Amêndoa/Branco",
-          "imgUrl": "/assets/img/estar8.jpeg",
-          "id": 20
-        }
-      ],
-      "valorTotal": 11273.8,
-      "idUser": 1,
-      "id": 1
-    },
-    {
-      "itens": [
-        {
-          "nome": "Cozinha Modulada Compacta CabeCasa",
-          "preco": 3446.9,
-          "favoritos": [],
-          "categoria": "cozinha",
-          "cor": [
-            "Azul"
-          ],
-          "quantidade": 1,
-          "descricao": "Cozinha Modulada Compacta 4 Peças com Armário Aéreo 2 Portas Vidro Arizona CabeCasa MadeiraMadeira Branco",
-          "imgUrl": "/assets/img/cozinha2.jpeg",
-          "id": 62
-        },
-        {
-          "nome": "Sofá Tiê 3 Lugares 218cm",
-          "preco": 2609,
-          "favoritos": [],
-          "categoria": "sala-de-estar",
-          "cor": [
-            "cinza"
-          ],
-          "quantidade": 4,
-          "descricao": "Sofá Tiê 3 Lugares 218cm em Linho CabeCasa MadeiraMadeira Cinza",
-          "imgUrl": "/assets/img/estar2.jpeg",
-          "id": 14
-        },
-        {
-          "nome": "Gabinete Suspenso para Banheiro Golden",
-          "preco": 519,
-          "favoritos": [],
-          "categoria": "banheiro",
-          "cor": [
-            "Preto",
-            "grafite"
-          ],
-          "quantidade": 3,
-          "descricao": "Gabinete Suspenso para Banheiro 80cm com Cuba Placa e Ponto Preto/Grafite",
-          "imgUrl": "/assets/img/banheiro1.jpeg",
-          "id": 48
-        },
-        {
-          "nome": "Guarda-Roupa Casal Costa Rica Sallêto",
-          "preco": 900,
-          "favoritos": [],
-          "categoria": "quarto",
-          "cor": [
-            "Branco"
-          ],
-          "quantidade": 6,
-          "descricao": "Guarda-Roupa Casal 3 Portas com Espelho Central e 4 Gavetas Costa Rica Sallêto Móveis Ipê/Off",
-          "imgUrl": "/assets/img/quarto3.jpeg",
-          "id": 27
-        }
-      ],
-      "valorTotal": 11974.9,
-      "idUser": 1,
-      "id": 2
-    },
-    {
-      "itens": [
-        {
-          "nome": "Guarda Roupa Casal Portugal Espresso",
-          "preco": 1735,
-          "favoritos": [],
-          "categoria": "quarto",
-          "cor": [
-            "Branco"
-          ],
-          "quantidade": 5,
-          "descricao": "Guarda Roupa Casal 6 Portas 8 Gavetas Portugal Espresso Móveis Cinamomo/Off-White",
-          "imgUrl": "/assets/img/quarto2.jpeg",
-          "id": 26
-        },
-        {
-          "nome": "Conjunto de Sala de jantar Paris Plus - 8 cadeiras",
-          "preco": 2999.91,
-          "favoritos": [],
-          "categoria": "sala-de-jantar",
-          "cor": [
-            "preto",
-            "madeira natural"
-          ],
-          "quantidade": 9,
-          "descricao": "Conjunto de Sala de jantar com mesa em tampo de vidro com 8 cadeiras e madeira maciça",
-          "imgUrl": "/assets/img/jantar2.jpeg",
-          "id": 2
-        },
-        {
-          "nome": "Mesa de jantar Alvorada com canto reto - 6 cadeiras",
-          "preco": 1579.9,
-          "favoritos": [],
-          "categoria": "sala-de-jantar",
-          "cor": [
-            "branco",
-            "madeira natural"
-          ],
-          "quantidade": 11,
-          "descricao": "Conjunto de Sala de jantar com mesa Tp MDF tampo de vidro e canto reto acompanhando 6 cadeiras",
-          "imgUrl": "/assets/img/jantar6.jpeg",
-          "id": 6
-        },
-        {
-          "nome": "Sofá Tiê 3 Lugares 218cm",
-          "preco": 2609,
-          "favoritos": [],
-          "categoria": "sala-de-estar",
-          "cor": [
-            "cinza"
-          ],
-          "quantidade": 4,
-          "descricao": "Sofá Tiê 3 Lugares 218cm em Linho CabeCasa MadeiraMadeira Cinza",
-          "imgUrl": "/assets/img/estar2.jpeg",
-          "id": 14
-        },
-        {
-          "nome": "Cozinha Modulada 9 Peças CabeCasa",
-          "preco": 6250.9,
-          "favoritos": [],
-          "categoria": "cozinha",
-          "cor": [
-            "Cinza"
-          ],
-          "quantidade": 1,
-          "descricao": "Cozinha Modulada 9 Peças sem Tampo 4 Aéreos 4 Balcões e Torre Quente Arizona CabeCasa MadeiraMadeira Branco/Cinza",
-          "imgUrl": "/assets/img/cozinha1.jpeg",
-          "id": 61
-        },
-        {
-          "nome": "Gabinete Suspenso para Banheiro Golden",
-          "preco": 519,
-          "favoritos": [],
-          "categoria": "banheiro",
-          "cor": [
-            "Preto",
-            "grafite"
-          ],
-          "quantidade": 3,
-          "descricao": "Gabinete Suspenso para Banheiro 80cm com Cuba Placa e Ponto Preto/Grafite",
-          "imgUrl": "/assets/img/banheiro1.jpeg",
-          "id": 48
-        }
-      ],
-      "valorTotal": 16731.71,
-      "idUser": 1,
-      "id": 3
-    }
-  ],
+  "usuarios": [],
+  "pedidos": [],
   "produtos": [
     {
       "nome": "Conjunto de Sala de jantar Star - 6 cadeiras",
@@ -304,7 +72,7 @@
       "id": 5
     },
     {
-      "nome": "Mesa de jantar Alvorada com canto reto - 6 cadeiras",
+      "nome": "Mesa de jantar Alvorada - 6 cadeiras",
       "preco": 1579.9,
       "favoritos": [],
       "categoria": "sala-de-jantar",
@@ -331,7 +99,7 @@
       "id": 7
     },
     {
-      "nome": "Mesa redonda Nuance Mônaco Yescasa - 6 cadeiras ",
+      "nome": "Mesa redonda Nuance Mônaco - 6 cadeiras ",
       "preco": 2599.91,
       "favoritos": [],
       "categoria": "sala-de-jantar",
@@ -410,7 +178,7 @@
       "id": 13
     },
     {
-      "nome": "Sofá Tiê 3 Lugares 218cm",
+      "nome": "Sofá Tiê 3 Lugares Cabecasa 218cm",
       "preco": 2609,
       "favoritos": [],
       "categoria": "sala-de-estar",
@@ -423,7 +191,7 @@
       "id": 14
     },
     {
-      "nome": "Sofá Connect Premium 2,00m",
+      "nome": "Sofá Connect Premium Cabecasa 2,00m",
       "preco": 1295,
       "favoritos": [],
       "categoria": "sala-de-estar",
@@ -625,7 +393,7 @@
       "id": 29
     },
     {
-      "nome": "Guarda Roupa Casal com Espelho 8 Portas Nova York",
+      "nome": "Guarda Roupa Casal 8 Portas Nova York",
       "preco": 599.89,
       "favoritos": [],
       "categoria": "quarto",
@@ -638,7 +406,7 @@
       "id": 30
     },
     {
-      "nome": "Cama Casal/Queen com Cabeceira e Mesa de Apoio",
+      "nome": "Cama Casal/Queen com Cabeceira e Mesinha",
       "preco": 1299,
       "favoritos": [],
       "categoria": "quarto",
@@ -664,7 +432,7 @@
       "id": 32
     },
     {
-      "nome": "Cama Casal Madri Espresso Móveis New Canion",
+      "nome": "Cama Casal Madri Espresso Móveis New",
       "preco": 541,
       "favoritos": [],
       "categoria": "quarto",

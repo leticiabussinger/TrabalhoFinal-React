@@ -45,6 +45,8 @@ export const CartProvider = ({ children }) => {
         const total = results.reduce((acc, current) => acc + current, 0);
         setCartValue(total);
       });
+    } else {
+      setCartValue(0);
     }
   }, [cartItensContextUnique]);
 

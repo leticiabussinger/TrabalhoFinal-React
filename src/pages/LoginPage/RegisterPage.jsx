@@ -32,7 +32,7 @@ const RegisterPage = () => {
           nome,
           email,
           senha,
-          carinho: [],
+          carrinho: [],
         });
         setErrorGeral(false);
         setErrorEmail(false);

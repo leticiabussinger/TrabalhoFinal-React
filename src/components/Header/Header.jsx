@@ -3,6 +3,7 @@ import Logo from '../../assets/img/logoHeader.png';
 import iconLupa from '../../assets/img/iconLupa.png';
 import IconUser from '../../assets/img/iconUsuario.png';
 import IconCart from '../../assets/img/iconCart.png';
+import IconOrder from '../../assets/img/iconOrder.png';
 import {
   ContainerBackgroundHeader,
   ContainerBackgroundSubHeader,
@@ -82,6 +83,13 @@ const Header = () => {
               {userLogado ? userLogado.nome : 'Login'}
             </p>
             <img onClick={deslogarIcon} src={IconUser} alt="Icone de usuario" />
+            <img onClick={() => {
+              if (userLogado == null) {
+                navigate('/login');
+              } else {
+                navigate('/pedidos');
+              }
+            }} src={IconOrder} alt="Icone de pedido" />
             <img
               src={IconCart}
               alt="Icone de carrinho"

@@ -5,7 +5,7 @@ export const Container = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   color: aliceblue;
-  padding-top: 6%;
+  padding-top: 4%;
   width: 80%;
   margin: 137px auto 0 auto;
   min-height: calc(100vh - 251px - 137px);
@@ -16,7 +16,7 @@ export const Container = styled.div`
 export const CartProductTitle = styled.div`
   display: flex;
   border-radius: 2px;
-  padding-bottom: 6%;
+  padding-bottom: 3%;
   h1{
     font-weight: 500;
   }
@@ -24,14 +24,14 @@ export const CartProductTitle = styled.div`
 export const Linha = styled.hr`
   border: 1px solid #6d6d6f;
   border-radius: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 `;
 
 export const Product = styled.div`
   width: 60%;
   height: auto;
-  padding-bottom: 2%;
- 
-  
+  padding-bottom: 2%;  
 `;
 export const ContainerFinishBuy = styled.div`
   display: flex;

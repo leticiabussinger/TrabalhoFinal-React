@@ -101,7 +101,6 @@ const CartPage = () => {
             </>
           );
         })}
-        <Linha />
       </Product>
       <ContainerFinishBuy>
         <ContainerSubtotalFrete>
@@ -121,7 +120,7 @@ const CartPage = () => {
               R$ <ValorTotal>{(cartValue * 0.95).toFixed(2)}</ValorTotal>
             </p>
             <p>à vista no cartão ou Pix (5% OFF)</p>
-            <p>ou R${(cartValue / 10).toFixed(2)} em 10x sem juros</p>
+            <p>ou R${cartValue.toFixed(2)} em 10x sem juros</p>
           </div>
         </ContainerTotal>
         <ButtonBuy onClick={finalizeOrder}>Finalizar Compra</ButtonBuy>

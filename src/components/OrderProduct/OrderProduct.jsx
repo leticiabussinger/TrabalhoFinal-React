@@ -4,39 +4,44 @@ import {
   ContainerProduct,
   ImgProduct,
   TagPValor,
-  ContainerQuantity,
-  ContainerBuy,
   TagPValorDesconto,
   TagPValorParcelado,
+  Linha,
+  ContainerDiv,
+  CartProductTitle,
 } from './styled';
 
-const OrderProduct = ({ product }) => {
+const OrderProduct = ({ product, idx }) => {
   return (
     <ContainerProduct>
+      <CartProductTitle>
+        <h1>Pedido #B9X7{idx}</h1>
+      </CartProductTitle>
       {product.itens.map((e) => {
         return (
           <>
             <ContainerProduct>
-              <ImgProduct src={e.imgUrl} alt={e.nome} />
-              <ContainerProductInfos>
-                <div>
-                  <h2>{e.nome}</h2>
-                  <p>Vendido e entregue por SerraDecor</p>
-                </div>
-                <div>
-                  <TagPValorDesconto>R$ {e.preco.toFixed(2)}</TagPValorDesconto>
-                  <TagPValor>à vista no cartão ou Pix (5% OFF)</TagPValor>
-                  <TagPValorParcelado>
-                    ou 10x de R$ {e.preco.toFixed(2)} sem juros
-                  </TagPValorParcelado>
-                </div>
-              </ContainerProductInfos>
+              <Linha />
+              <ContainerDiv>
+                <ImgProduct src={e.imgUrl} alt={e.nome} />
+                <ContainerProductInfos>
+                  <div>
+                    <h2>{e.nome}</h2>
+                    <p>Vendido e entregue por SerraDecor</p>
+                  </div>
+                  <div>
+                    <TagPValorDesconto>R$ {(e.preco * 0.95).toFixed(2)}</TagPValorDesconto>
+                    <TagPValor>à vista</TagPValor>
+                  </div>
+                </ContainerProductInfos>
+              </ContainerDiv>
             </ContainerProduct>
           </>
         );
       })}
+      <Linha />
       <TagPValorDesconto>
-        Valor Total do pedido: R$ {product.valorTotal}
+        Valor Total: R$ {(product.valorTotal * 0.95).toFixed(2)}
       </TagPValorDesconto>
     </ContainerProduct>
   );

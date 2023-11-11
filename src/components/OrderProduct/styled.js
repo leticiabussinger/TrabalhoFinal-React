@@ -3,11 +3,18 @@ import styled from 'styled-components';
 export const ContainerProduct = styled.div`
   display: flex;
   flex-direction: column;
-  border: 2px solid #6d6d6f;
   border-radius: 6px;
-  flex: 1;
   height: max-content;
   padding: 1%;
+`;
+export const CartProductTitle = styled.div`
+   display: flex;
+    border-radius: 2px;
+    padding-left: 2%;
+    padding-bottom: 1%;
+  h1{
+    font-weight: 500;
+  }
 `;
 export const ImgProduct = styled.img`
   width: 100px;
@@ -79,3 +86,15 @@ export const TagPValorParcelado = styled.p`
 export const ContainerBuy = styled.div`
   margin-top: 20px;
 `;
+
+export const Linha = styled.hr`
+  border: 1px solid #6d6d6f;
+  border-radius: 2px;
+  margin-bottom: 15px;
+`;
+
+
+export const ContainerDiv = styled.div`
+  display: flex;
+  gap: 30px;
+`

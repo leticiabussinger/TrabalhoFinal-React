@@ -53,7 +53,7 @@ const CartProduct = ({ product, qnt }) => {
           </ContainerBuy>
         </div>
         <div>
-          <TagPValorDesconto>R$ {preco.toFixed(2)}</TagPValorDesconto>
+          <TagPValorDesconto>R$ {(preco * 0.95).toFixed(2)}</TagPValorDesconto>
           <TagPValor>à vista no cartão ou Pix (5% OFF)</TagPValor>
           <TagPValorParcelado>
             ou 10x de R$ {preco.toFixed(2)} sem juros

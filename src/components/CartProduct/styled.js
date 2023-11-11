@@ -20,6 +20,7 @@ export const ContainerProductInfos = styled.div`
   h2 {
     text-align: start;
     margin-bottom: 10px;
+    font-size: 18px;
   }
 `;
 
@@ -70,11 +71,12 @@ export const TagPValorDesconto = styled.p`
   font-size: 30px;
   font-weight: bold;
   text-align: end;
-  margin: 15px 0 8px 0;
+  margin-bottom: 10px;
 `;
 export const TagPValor = styled.p`
   text-align: end;
   margin-bottom: 4px;
+  font-size: 14px;
 `;
 export const TagPValorParcelado = styled.p`
   flex: 1;

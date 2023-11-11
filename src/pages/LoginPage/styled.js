@@ -1,18 +1,15 @@
 import styled from 'styled-components';
-import FundoLogin from '../../assets/img/fundologin1.png';
 
 export const FundoImg = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background-color: #292020; */
-  /* height: 120vh; */
 `;
 
 export const ContainerLogin = styled.div`
   padding: 50px;
-  width: 25%;
+  width: 35%;
   margin: 0 auto 250px auto;
   font-size: 1.1rem;
   background: rgba(0, 0, 0, 0.8);
@@ -41,8 +38,9 @@ export const NoAccountP = styled.p`
   color: white;
 
   span {
-    color: blueviolet;
+    color: #c69859;
     cursor: pointer;
+    font-weight: 700;
   }
 `;
 

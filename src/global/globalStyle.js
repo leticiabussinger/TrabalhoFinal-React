@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import FundoLogin from '../assets/img/fundologin1.png';
+import FundoLogin from '/assets/img/FundoLogin.png';
 
 export const GlobalStyle = createGlobalStyle`
     *{
