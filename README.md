@@ -24,8 +24,6 @@ Como projeto final da Disciplina WEB do SERRATEC, o desafio proposto é a criaç
     - Senha
 
 # Extras:
-- Dentro da tela de um produto específico será possível avaliar o produto como gostei ou não gostei.
-    - Qualquer usuário que logar na aplicação, irá ver a quantidade de likes total.
 - Ao finalizar a compra a mesma deverá ser registrada via API na rota de pedidos.
 - Tela ou Modal para Carrinho:
     - Qualquer produto poderá ser adicionado no carrinho. 
